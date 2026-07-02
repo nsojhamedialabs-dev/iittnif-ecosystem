@@ -176,6 +176,9 @@ importers:
       '@iittnif/cms-client':
         specifier: workspace:*
         version: link:../cms-client
+      '@iittnif/design-system':
+        specifier: workspace:^
+        version: link:../design-system
       framer-motion:
         specifier: ^11.2.0
         version: 11.18.2(react-dom@19.2.6(react@18.3.1))(react@18.3.1)

@@ -1,3 +1,5 @@
+// packages/ui/src/TopicPage/TopicPage.tsx
+
 // MOBILE-FIRST: see /MOBILE_FIRST.md — this component/page is designed
 // and coded for 360px first. Unprefixed Tailwind classes = mobile
 // layout; sm:/md:/lg:/xl: add desktop enhancements, they never carry
@@ -10,19 +12,13 @@ import { Hero } from '../Hero'
 export interface TopicPageProps {
   title: string
   summary?: string
-  body?: string // rendered rich text HTML from Payload; swap for RichText renderer later
+  body?: string 
   heroImage?: string
   trlStage?: keyof typeof trlToSpine
   relatedLinks?: { label: string; href: string }[]
   breadcrumb?: { label: string; href: string }
 }
 
-/**
- * TopicPage — renders EVERY item from Core Areas, Applied Areas,
- * Technology Development, HR pathways, and Meta Data Resources.
- * One template, driven entirely by CMS data. See
- * packages/ui/src/TopicPage/README.md for the full rationale.
- */
 export function TopicPage({
   title,
   summary,
@@ -31,7 +27,8 @@ export function TopicPage({
   relatedLinks,
   breadcrumb,
 }: TopicPageProps) {
-  const stage: SpineStage = trlStage ? trlToSpine[trlStage] : 'research'
+  // FIX: Added the `?? 'research'` fallback to satisfy strict TypeScript indexing
+  const stage: SpineStage = trlStage ? (trlToSpine[trlStage] ?? 'research') : 'research'
 
   return (
     <article>

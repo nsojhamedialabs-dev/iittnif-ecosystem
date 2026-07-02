@@ -6,6 +6,7 @@
   "types": "./src/index.ts",
   "dependencies": {
     "@iittnif/cms-client": "workspace:*",
+    "@iittnif/design-system": "workspace:^",
     "lenis": "^1.3.25"
   },
   "peerDependencies": {
