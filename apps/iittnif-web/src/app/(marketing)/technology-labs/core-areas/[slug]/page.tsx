@@ -13,13 +13,31 @@ const CATEGORY = 'core-areas'
 // Pre-renders every Core Area at build time; ISR revalidates every 5 min
 // so a new CMS entry appears without a redeploy.
 export async function generateStaticParams() {
-  const items = await getTopicsByCategory('iittnif', SECTION, CATEGORY)
-  return items.map((item) => ({ slug: item.slug }))
+  try {
+    const items = await getTopicsByCategory('iittnif', SECTION, CATEGORY)
+    return items.map((item) => ({ slug: item.slug }))
+  } catch (error) {
+    // If the CMS is offline, just tell Next.js there are no pages to pre-render right now
+    console.error("CMS unreachable during build, returning empty routes.")
+    return [] 
+  }
 }
 
 export default async function CoreAreaPage({ params }: { params: { slug: string } }) {
-  const data = await getTopicBySlug('iittnif', SECTION, CATEGORY, params.slug)
-  if (!data) notFound()
+  // We create a variable to hold the data, starting as null
+  let data = null;
+
+  // We wrap the fetch in a try/catch block
+  try {
+    data = await getTopicBySlug('iittnif', SECTION, CATEGORY, params.slug);
+  } catch (error) {
+    // If the CMS is offline (like on Vercel), it just logs the error 
+    // instead of crashing the whole build.
+    console.error("CMS unreachable, proceeding with null data.");
+  }
+
+  // If data is still null, we trigger the 404 page gracefully
+  if (!data) notFound();
 
   return (
     <TopicPage
