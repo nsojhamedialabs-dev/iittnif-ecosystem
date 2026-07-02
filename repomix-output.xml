@@ -1,0 +1,5020 @@
+This file is a merged representation of a subset of the codebase, containing files not matching ignore patterns, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching these patterns are excluded: **/*.mp4, **/*.png, **/*.jpg, **/*.svg, pnpm-lock.yaml
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.env.example
+.gitignore
+apps/cms/.env.example
+apps/cms/.git/COMMIT_EDITMSG
+apps/cms/.git/config
+apps/cms/.git/description
+apps/cms/.git/HEAD
+apps/cms/.git/hooks/applypatch-msg.sample
+apps/cms/.git/hooks/commit-msg.sample
+apps/cms/.git/hooks/fsmonitor-watchman.sample
+apps/cms/.git/hooks/post-update.sample
+apps/cms/.git/hooks/pre-applypatch.sample
+apps/cms/.git/hooks/pre-commit.sample
+apps/cms/.git/hooks/pre-merge-commit.sample
+apps/cms/.git/hooks/pre-push.sample
+apps/cms/.git/hooks/pre-rebase.sample
+apps/cms/.git/hooks/pre-receive.sample
+apps/cms/.git/hooks/prepare-commit-msg.sample
+apps/cms/.git/hooks/push-to-checkout.sample
+apps/cms/.git/hooks/sendemail-validate.sample
+apps/cms/.git/hooks/update.sample
+apps/cms/.git/index
+apps/cms/.git/info/exclude
+apps/cms/.git/logs/HEAD
+apps/cms/.git/logs/refs/heads/master
+apps/cms/.git/objects/05/fc1a03df6381870c4926dc9b5ac55f641f9a8e
+apps/cms/.git/objects/07/5588617e7ea3c006293896f2a55cc9bf385441
+apps/cms/.git/objects/0d/e685cd62bc11f8bdac9a4c9ab5d6c6512ce040
+apps/cms/.git/objects/15/7f19e5d64c2dfad12e403d378ceed62091a953
+apps/cms/.git/objects/17/d2954ca2d252da6bc2067556593bec90809f7f
+apps/cms/.git/objects/1a/76c852b643afee7acbc289790ab0c2ddfc3489
+apps/cms/.git/objects/1d/7ac851ea8aba2b36bfca0c7969beec7547f691
+apps/cms/.git/objects/20/69ff86b0aafd09869166fd118fe23868325c98
+apps/cms/.git/objects/20/be63458eba5c14a33f86088cfd175026195a54
+apps/cms/.git/objects/2b/b00aabd0cc52c7b065e30503d42eaca111c8f7
+apps/cms/.git/objects/30/b767146fa2d27746ff12808d51d92b0ac97978
+apps/cms/.git/objects/3d/630f4103cbbce16a658c0ef1e3317ff78ef4e5
+apps/cms/.git/objects/3f/658423d2ca3e71c60e4bcd61ce26f2ba22a76b
+apps/cms/.git/objects/47/65db98540e7e61c59f55b6cda73d34bf876cf3
+apps/cms/.git/objects/56/8cf42657fc499daaa0c6936ac046ab44e93463
+apps/cms/.git/objects/57/2ee15f7fd4abe07ce72442818243655fad9438
+apps/cms/.git/objects/5d/9986d08f690a782323c8378aa7a9aa240b2bb8
+apps/cms/.git/objects/5e/7a4dd335c62951941c1821ffe5851c06ac5b6e
+apps/cms/.git/objects/63/bddfd9c489610d2de77ed9c74ea9e2d352b747
+apps/cms/.git/objects/64/108365fd93c489ee4e0fe470149fbbd0fe97dc
+apps/cms/.git/objects/65/c31fd551721ac5cef10fad092e16b72bf9a393
+apps/cms/.git/objects/66/e7137ef0bff92016dbfe7d1dc02d3c601ade52
+apps/cms/.git/objects/67/fc9217bdc10ec52e6c2705379ea54ddb88004b
+apps/cms/.git/objects/77/b7493a242b93d0c0deb0a674d8442965383ee8
+apps/cms/.git/objects/7a/bb62dd90ef805240b64f7a3c7c1338106f6584
+apps/cms/.git/objects/7b/815096741f3d910e532846ddc42f3bb37ec412
+apps/cms/.git/objects/7d/3293ee980c0da91105bb878624bcdbed6de3a5
+apps/cms/.git/objects/8c/cc0397992143fb93faa93c1a40be97c0840719
+apps/cms/.git/objects/8d/f141aeb2b24c724bd389b53ade6ceb98451751
+apps/cms/.git/objects/91/cef066276615c2787fc305f0da23009b74842a
+apps/cms/.git/objects/93/c7f258fec9910d9fbe4a34f1a7b271b186a15a
+apps/cms/.git/objects/98/96220d75226ff5c21de9f7377f53dfee446c30
+apps/cms/.git/objects/99/e5a632671596f2e34920ace7248723321a783e
+apps/cms/.git/objects/99/ff17451630ade69dc5b99f69908c11b6cc51f0
+apps/cms/.git/objects/9b/d5adb1c8570346c8025911b64a5aaac0d50c83
+apps/cms/.git/objects/a9/508eff5404d2308d4ba755a11a228d29e1c45e
+apps/cms/.git/objects/ae/da4b7aca1f26cc7c87228a8e9b45bd2583d9a7
+apps/cms/.git/objects/c6/0fa9dcfabf2bfc06ec30d01a2662b54825ac1a
+apps/cms/.git/objects/c6/83d0e2d58aba7a4c22a6739c9a31e80ead164b
+apps/cms/.git/objects/cb/8ee2671dfc3053804108ceef6bb9e5856f09c6
+apps/cms/.git/objects/d1/788b3eec9f4d232c64cf341b790a5c7ddeac8c
+apps/cms/.git/objects/d1/fb9419d6f8cc7ab99128c21560704ba73927e2
+apps/cms/.git/objects/d2/aee6193af52e3b3a95bd5994eb89112edfe64c
+apps/cms/.git/objects/d5/3193e736cfd63ba6620d9689df4434c2c35d9f
+apps/cms/.git/objects/d7/c540c87aec344d419319e3e9417d0018834f8f
+apps/cms/.git/objects/da/0c1b3730c5837486edc53571a777e4babb8398
+apps/cms/.git/objects/db/244d5a494e319aa1cdf1abc711e5591d69a455
+apps/cms/.git/objects/dc/2fffffc1f00310fcb1bd521014bbda3c0eb29b
+apps/cms/.git/objects/dd/f218f040caa0bdd4ebe205ea917104abefcb94
+apps/cms/.git/objects/de/ef8c2d28313a63231900dbaaa8637bb8f84b3a
+apps/cms/.git/objects/df/9f2cfbd6e321493e50ec5a35e8aaaa40d447b7
+apps/cms/.git/objects/e5/8c50f50cade6ac8c5c1ce655ac82057a2d8158
+apps/cms/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+apps/cms/.git/objects/e7/681f7d694af7d4c00347c46b4b76346ef0087f
+apps/cms/.git/objects/e9/ee3cb4d04a562d5bf82c635e11ec2569f108aa
+apps/cms/.git/objects/ea/45a655bf219b8d94ef72c794e289fc589853c5
+apps/cms/.git/objects/f0/f5c86f62b07ae7a2ea3f40c3bca61933998bee
+apps/cms/.git/objects/f4/d8caa39393c045badcc2f03170ca0d0709ee04
+apps/cms/.git/objects/fc/c9f8eda289664532bc58c12605f328a6e47025
+apps/cms/.git/refs/heads/master
+apps/cms/.gitignore
+apps/cms/.npmrc
+apps/cms/.prettierrc.json
+apps/cms/.vscode/extensions.json
+apps/cms/.vscode/launch.json
+apps/cms/.vscode/settings.json
+apps/cms/.yarnrc
+apps/cms/cms.db
+apps/cms/docker-compose.yml
+apps/cms/Dockerfile
+apps/cms/eslint.config.mjs
+apps/cms/next.config.ts
+apps/cms/package.json
+apps/cms/playwright.config.ts
+apps/cms/README.md
+apps/cms/src/app/(frontend)/layout.tsx
+apps/cms/src/app/(frontend)/page.tsx
+apps/cms/src/app/(frontend)/styles.css
+apps/cms/src/app/(payload)/admin/[[...segments]]/not-found.tsx
+apps/cms/src/app/(payload)/admin/[[...segments]]/page.tsx
+apps/cms/src/app/(payload)/admin/importMap.js
+apps/cms/src/app/(payload)/api/[...slug]/route.ts
+apps/cms/src/app/(payload)/api/graphql-playground/route.ts
+apps/cms/src/app/(payload)/api/graphql/route.ts
+apps/cms/src/app/(payload)/custom.scss
+apps/cms/src/app/(payload)/layout.tsx
+apps/cms/src/app/my-route/route.ts
+apps/cms/src/collections/Media.ts
+apps/cms/src/collections/Tenants.ts
+apps/cms/src/collections/TopicPages.ts
+apps/cms/src/collections/Users.ts
+apps/cms/src/payload-types.ts
+apps/cms/src/payload.config.ts
+apps/cms/test.env
+apps/cms/tests/e2e/admin.e2e.spec.ts
+apps/cms/tests/e2e/frontend.e2e.spec.ts
+apps/cms/tests/helpers/login.ts
+apps/cms/tests/helpers/seedUser.ts
+apps/cms/tests/int/api.int.spec.ts
+apps/cms/tsconfig.json
+apps/cms/vitest.config.mts
+apps/cms/vitest.setup.ts
+apps/dronagiri-web/README.md
+apps/iittnif-web/global.d.ts
+apps/iittnif-web/next-env.d.ts
+apps/iittnif-web/next.config.js
+apps/iittnif-web/package.json
+apps/iittnif-web/postcss.config.js
+apps/iittnif-web/README.md
+apps/iittnif-web/src/app/(marketing)/layout.tsx
+apps/iittnif-web/src/app/(marketing)/page.tsx
+apps/iittnif-web/src/app/(marketing)/technology-labs/core-areas/[slug]/page.tsx
+apps/iittnif-web/src/app/globals.css
+apps/iittnif-web/src/app/layout.tsx
+apps/iittnif-web/tailwind.config.js
+apps/iittnif-web/tsconfig.json
+docs/PDR.pdf
+GETTING_STARTED.md
+infra/docker/README.md
+infra/vercel/README.md
+MOBILE_FIRST.md
+package.json
+packages/cms-client/package.json
+packages/cms-client/README.md
+packages/cms-client/src/index.ts
+packages/cms-client/src/queries/topicPages.ts
+packages/config/eslint-preset/index.js
+packages/config/package.json
+packages/config/tailwind-preset/index.js
+packages/config/tsconfig/base.json
+packages/config/tsconfig/nextjs.json
+packages/design-system/package.json
+packages/design-system/README.md
+packages/design-system/tokens/colors.ts
+packages/design-system/tokens/index.ts
+packages/design-system/tokens/spacing.ts
+packages/design-system/tokens/typography.ts
+packages/i18n/en/common.json
+packages/i18n/hi/common.json
+packages/i18n/index.ts
+packages/i18n/package.json
+packages/i18n/README.md
+packages/ui/package.json
+packages/ui/README.md
+packages/ui/src/Hero/Hero.tsx
+packages/ui/src/Hero/index.ts
+packages/ui/src/index.ts
+packages/ui/src/MegaMenu/index.ts
+packages/ui/src/MegaMenu/MegaMenu.tsx
+packages/ui/src/MegaMenu/README.md
+packages/ui/src/Pillars/index.ts
+packages/ui/src/Pillars/Pillars.tsx
+packages/ui/src/Pipeline/index.ts
+packages/ui/src/Pipeline/Pipeline.tsx
+packages/ui/src/TopicPage/index.ts
+packages/ui/src/TopicPage/README.md
+packages/ui/src/TopicPage/TopicPage.tsx
+pnpm-workspace.yaml
+README.md
+turbo.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".env.example">
+# Copy to .env.local in each app that needs it
+
+# --- iittnif-web / dronagiri-web ---
+NEXT_PUBLIC_CMS_API_URL=http://localhost:3001
+
+# --- cms (Payload) ---
+PAYLOAD_SECRET=replace-with-a-long-random-string
+DATABASE_URI=postgresql://user:password@localhost:5432/iittnif
+</file>
+
+<file path=".gitignore">
+node_modules/
+.next/
+out/
+dist/
+.env
+.env.local
+.turbo/
+*.log
+.DS_Store
+</file>
+
+<file path="apps/cms/.env.example">
+DATABASE_URL=mongodb://127.0.0.1/your-database-name
+PAYLOAD_SECRET=YOUR_SECRET_HERE
+</file>
+
+<file path="apps/cms/.git/COMMIT_EDITMSG">
+feat: initial commit
+</file>
+
+<file path="apps/cms/.git/config">
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+</file>
+
+<file path="apps/cms/.git/description">
+Unnamed repository; edit this file 'description' to name the repository.
+</file>
+
+<file path="apps/cms/.git/HEAD">
+ref: refs/heads/master
+</file>
+
+<file path="apps/cms/.git/hooks/applypatch-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+</file>
+
+<file path="apps/cms/.git/hooks/commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines and messages that
+# would confuse 'git am'.
+
+ret=0
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	ret=1
+}
+
+comment_re="$(
+	{
+		git config --get-regexp "^core\.comment(char|string)\$" ||
+			echo '#'
+	} | sed -n -e '
+		${
+			s/^[^ ]* //
+			s|[][*./\]|\\&|g
+			s/^auto$/[#;@!$%^&|:]/
+			p
+		}'
+)"
+scissors_line="^${comment_re} -\{8,\} >8 -\{8,\}\$"
+comment_line="^${comment_re}.*"
+blank_line='^[ 	]*$'
+# Disallow lines starting with "diff -" or "Index: " in the body of the
+# message. Stop looking if we see a scissors line.
+line="$(sed -n -e "
+	# Skip comments and blank lines at the start of the file.
+	/${scissors_line}/q
+	/${comment_line}/d
+	/${blank_line}/d
+	# The first paragraph will become the subject header so
+	# does not need to be checked.
+	: subject
+	n
+	/${scissors_line}/q
+	/${blank_line}/!b subject
+	# Check the body of the message for problematic
+	# prefixes.
+	: body
+	n
+	/${scissors_line}/q
+	/${comment_line}/b body
+	/^diff -/{p;q;}
+	/^Index: /{p;q;}
+	b body
+	" "$1")"
+if test -n "$line"
+then
+	echo >&2 "Message contains a diff that will confuse 'git am'."
+	echo >&2 "To fix this indent the diff."
+	ret=1
+fi
+
+exit $ret
+</file>
+
+<file path="apps/cms/.git/hooks/fsmonitor-watchman.sample">
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	my $last_update_line = "";
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+		$last_update_line = qq[\n"since": $last_update_token,];
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {$last_update_line
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $o->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+</file>
+
+<file path="apps/cms/.git/hooks/post-update.sample">
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+</file>
+
+<file path="apps/cms/.git/hooks/pre-applypatch.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+</file>
+
+<file path="apps/cms/.git/hooks/pre-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff-index --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+</file>
+
+<file path="apps/cms/.git/hooks/pre-merge-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+</file>
+
+<file path="apps/cms/.git/hooks/pre-push.sample">
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+</file>
+
+<file path="apps/cms/.git/hooks/pre-rebase.sample">
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+</file>
+
+<file path="apps/cms/.git/hooks/pre-receive.sample">
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+</file>
+
+<file path="apps/cms/.git/hooks/prepare-commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+</file>
+
+<file path="apps/cms/.git/hooks/push-to-checkout.sample">
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+</file>
+
+<file path="apps/cms/.git/hooks/sendemail-validate.sample">
+#!/bin/sh
+
+# An example hook script to validate a patch (and/or patch series) before
+# sending it via email.
+#
+# The hook should exit with non-zero status after issuing an appropriate
+# message if it wants to prevent the email(s) from being sent.
+#
+# To enable this hook, rename this file to "sendemail-validate".
+#
+# By default, it will only check that the patch(es) can be applied on top of
+# the default upstream branch without conflicts in a secondary worktree. After
+# validation (successful or not) of the last patch of a series, the worktree
+# will be deleted.
+#
+# The following config variables can be set to change the default remote and
+# remote ref that are used to apply the patches against:
+#
+#   sendemail.validateRemote (default: origin)
+#   sendemail.validateRemoteRef (default: HEAD)
+#
+# Replace the TODO placeholders with appropriate checks according to your
+# needs.
+
+validate_cover_letter () {
+	file="$1"
+	# TODO: Replace with appropriate checks (e.g. spell checking).
+	true
+}
+
+validate_patch () {
+	file="$1"
+	# Ensure that the patch applies without conflicts.
+	git am -3 "$file" || return
+	# TODO: Replace with appropriate checks for this patch
+	# (e.g. checkpatch.pl).
+	true
+}
+
+validate_series () {
+	# TODO: Replace with appropriate checks for the whole series
+	# (e.g. quick build, coding style checks, etc.).
+	true
+}
+
+# main -------------------------------------------------------------------------
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = 1
+then
+	remote=$(git config --default origin --get sendemail.validateRemote) &&
+	ref=$(git config --default HEAD --get sendemail.validateRemoteRef) &&
+	worktree=$(mktemp --tmpdir -d sendemail-validate.XXXXXXX) &&
+	git worktree add -fd --checkout "$worktree" "refs/remotes/$remote/$ref" &&
+	git config --replace-all sendemail.validateWorktree "$worktree"
+else
+	worktree=$(git config --get sendemail.validateWorktree)
+fi || {
+	echo "sendemail-validate: error: failed to prepare worktree" >&2
+	exit 1
+}
+
+unset GIT_DIR GIT_WORK_TREE
+cd "$worktree" &&
+
+if grep -q "^diff --git " "$1"
+then
+	validate_patch "$1"
+else
+	validate_cover_letter "$1"
+fi &&
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = "$GIT_SENDEMAIL_FILE_TOTAL"
+then
+	git config --unset-all sendemail.validateWorktree &&
+	trap 'git worktree remove -ff "$worktree"' EXIT &&
+	validate_series
+fi
+</file>
+
+<file path="apps/cms/.git/hooks/update.sample">
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+</file>
+
+<file path="apps/cms/.git/info/exclude">
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+</file>
+
+<file path="apps/cms/.git/logs/HEAD">
+0000000000000000000000000000000000000000 5d9986d08f690a782323c8378aa7a9aa240b2bb8 Narasimha <nsojasmedialabs@gmail.com> 1782930813 +0530	commit (initial): feat: initial commit
+</file>
+
+<file path="apps/cms/.git/logs/refs/heads/master">
+0000000000000000000000000000000000000000 5d9986d08f690a782323c8378aa7a9aa240b2bb8 Narasimha <nsojasmedialabs@gmail.com> 1782930813 +0530	commit (initial): feat: initial commit
+</file>
+
+<file path="apps/cms/.git/refs/heads/master">
+5d9986d08f690a782323c8378aa7a9aa240b2bb8
+</file>
+
+<file path="apps/cms/.gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+/.idea/*
+!/.idea/runConfigurations
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.env
+
+/media
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+</file>
+
+<file path="apps/cms/.npmrc">
+legacy-peer-deps=true
+</file>
+
+<file path="apps/cms/.prettierrc.json">
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "semi": false
+}
+</file>
+
+<file path="apps/cms/.vscode/extensions.json">
+{
+  "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+}
+</file>
+
+<file path="apps/cms/.vscode/launch.json">
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Next.js: debug full stack",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/next/dist/bin/next",
+      "runtimeArgs": ["--inspect"],
+      "skipFiles": ["<node_internals>/**"],
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "killOnServerStop": true,
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "webRoot": "${workspaceFolder}"
+      },
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
+</file>
+
+<file path="apps/cms/.vscode/settings.json">
+{
+  "npm.packageManager": "pnpm",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSaveMode": "file",
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+  "[javascript][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
+}
+</file>
+
+<file path="apps/cms/.yarnrc">
+--install.ignore-engines true
+</file>
+
+<file path="apps/cms/docker-compose.yml">
+version: '3'
+
+services:
+  payload:
+    image: node:20-alpine
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/home/node/app
+      - node_modules:/home/node/app/node_modules
+    working_dir: /home/node/app/
+    command: sh -c "corepack enable && corepack prepare pnpm@latest --activate && pnpm install && pnpm dev"
+    depends_on:
+      - mongo
+      # - postgres
+    env_file:
+      - .env
+
+  # Ensure your DATABASE_URL uses 'mongo' as the hostname ie. mongodb://mongo/my-db-name
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    command:
+      - --storageEngine=wiredTiger
+    volumes:
+      - data:/data/db
+    logging:
+      driver: none
+
+  # Uncomment the following to use postgres
+  # postgres:
+  #   restart: always
+  #   image: postgres:latest
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+
+volumes:
+  data:
+  # pgdata:
+  node_modules:
+</file>
+
+<file path="apps/cms/Dockerfile">
+# To use this Dockerfile, you have to set `output: 'standalone'` in your next.config.mjs file.
+# From https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
+
+FROM node:22.17.0-alpine AS base
+
+# Install dependencies only when needed
+FROM base AS deps
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
+
+# Install dependencies based on the preferred package manager
+COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
+RUN \
+  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
+  elif [ -f package-lock.json ]; then npm ci; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i --frozen-lockfile; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
+
+
+# Rebuild the source code only when needed
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+
+# Next.js collects completely anonymous telemetry data about general usage.
+# Learn more here: https://nextjs.org/telemetry
+# Uncomment the following line in case you want to disable telemetry during the build.
+# ENV NEXT_TELEMETRY_DISABLED 1
+
+RUN \
+  if [ -f yarn.lock ]; then yarn run build; \
+  elif [ -f package-lock.json ]; then npm run build; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
+
+# Production image, copy all the files and run next
+FROM base AS runner
+WORKDIR /app
+
+ENV NODE_ENV production
+# Uncomment the following line in case you want to disable telemetry during runtime.
+# ENV NEXT_TELEMETRY_DISABLED 1
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+# Remove this line if you do not have this folder
+COPY --from=builder /app/public ./public
+
+# Set the correct permission for prerender cache
+RUN mkdir .next
+RUN chown nextjs:nodejs .next
+
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
+
+EXPOSE 3000
+
+ENV PORT 3000
+
+# server.js is created by next build from the standalone output
+# https://nextjs.org/docs/pages/api-reference/next-config-js/output
+CMD HOSTNAME="0.0.0.0" node server.js
+</file>
+
+<file path="apps/cms/eslint.config.mjs">
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
+import { FlatCompat } from '@eslint/eslintrc'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+})
+
+const eslintConfig = [
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  {
+    rules: {
+      '@typescript-eslint/ban-ts-comment': 'warn',
+      '@typescript-eslint/no-empty-object-type': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          vars: 'all',
+          args: 'after-used',
+          ignoreRestSiblings: false,
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^(_|ignore)',
+        },
+      ],
+    },
+  },
+  {
+    ignores: ['.next/', 'src/payload-types.ts', 'src/payload-generated-schema.ts'],
+  },
+]
+
+export default eslintConfig
+</file>
+
+<file path="apps/cms/next.config.ts">
+import { withPayload } from '@payloadcms/next/withPayload'
+import type { NextConfig } from 'next'
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(__filename)
+
+const nextConfig: NextConfig = {
+  images: {
+    localPatterns: [
+      {
+        pathname: '/api/media/file/**',
+      },
+    ],
+  },
+  webpack: (webpackConfig) => {
+    webpackConfig.resolve.extensionAlias = {
+      '.cjs': ['.cts', '.cjs'],
+      '.js': ['.ts', '.tsx', '.js', '.jsx'],
+      '.mjs': ['.mts', '.mjs'],
+    }
+
+    return webpackConfig
+  },
+  turbopack: {
+    root: path.resolve(dirname),
+  },
+}
+
+export default withPayload(nextConfig, { devBundleServerPackages: false })
+</file>
+
+<file path="apps/cms/package.json">
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "A blank template to get started with Payload 3.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev --webpack -p 3001",
+    "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
+    "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation eslint .",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start -p 3001",
+    "test": "pnpm run test:int && pnpm run test:e2e",
+    "test:e2e": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" playwright test --config=playwright.config.ts",
+    "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts"
+  },
+  "dependencies": {
+    "@payloadcms/next": "3.85.2",
+    "@payloadcms/richtext-lexical": "3.85.2",
+    "@payloadcms/ui": "3.85.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "16.4.7",
+    "graphql": "^16.8.1",
+    "next": "16.2.6",
+    "payload": "3.85.2",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "sharp": "0.34.2",
+    "@payloadcms/db-sqlite": "3.85.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@testing-library/react": "16.3.0",
+    "@types/node": "22.19.9",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "4.5.2",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "16.2.6",
+    "jsdom": "28.0.0",
+    "prettier": "^3.4.2",
+    "tsx": "4.21.0",
+    "typescript": "5.7.3",
+    "vite-tsconfig-paths": "6.0.5",
+    "vitest": "4.0.18"
+  },
+  "engines": {
+    "node": "^18.20.2 || >=20.9.0",
+    "pnpm": "^9 || ^10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild",
+      "unrs-resolver"
+    ]
+  }
+}
+</file>
+
+<file path="apps/cms/playwright.config.ts">
+import { defineConfig, devices } from '@playwright/test'
+
+/**
+ * Read environment variables from file.
+ * https://github.com/motdotla/dotenv
+ */
+import 'dotenv/config'
+
+/**
+ * See https://playwright.dev/docs/test-configuration.
+ */
+export default defineConfig({
+  testDir: './tests/e2e',
+  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  forbidOnly: !!process.env.CI,
+  /* Retry on CI only */
+  retries: process.env.CI ? 2 : 0,
+  /* Opt out of parallel tests on CI. */
+  workers: process.env.CI ? 1 : undefined,
+  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  reporter: 'html',
+  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  use: {
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    // baseURL: 'http://localhost:3000',
+
+    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on-first-retry',
+  },
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'], channel: 'chromium' },
+    },
+  ],
+  webServer: {
+    command: 'pnpm dev',
+    reuseExistingServer: true,
+    url: 'http://localhost:3000',
+  },
+})
+</file>
+
+<file path="apps/cms/README.md">
+# Payload Blank Template
+
+This template comes configured with the bare minimum to get started on anything you need.
+
+## Quick start
+
+This template can be deployed directly from our Cloud hosting and it will setup MongoDB and cloud S3 object storage for media.
+
+## Quick Start - local setup
+
+To spin up this template locally, follow these steps:
+
+### Clone
+
+After you click the `Deploy` button above, you'll want to have standalone copy of this repo on your machine. If you've already cloned this repo, skip to [Development](#development).
+
+### Development
+
+1. First [clone the repo](#clone) if you have not done so already
+2. `cd my-project && cp .env.example .env` to copy the example environment variables. You'll need to add the `MONGODB_URL` from your Cloud project to your `.env` if you want to use S3 storage and the MongoDB database that was created for you.
+
+3. `pnpm install && pnpm dev` to install dependencies and start the dev server
+4. open `http://localhost:3000` to open the app in your browser
+
+That's it! Changes made in `./src` will be reflected in your app. Follow the on-screen instructions to login and create your first admin user. Then check out [Production](#production) once you're ready to build and serve your app, and [Deployment](#deployment) when you're ready to go live.
+
+#### Docker (Optional)
+
+If you prefer to use Docker for local development instead of a local MongoDB instance, the provided docker-compose.yml file can be used.
+
+To do so, follow these steps:
+
+- Modify the `MONGODB_URL` in your `.env` file to `mongodb://127.0.0.1/<dbname>`
+- Modify the `docker-compose.yml` file's `MONGODB_URL` to match the above `<dbname>`
+- Run `docker-compose up` to start the database, optionally pass `-d` to run in the background.
+
+## How it works
+
+The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
+
+### Collections
+
+See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
+
+- #### Users (Authentication)
+
+  Users are auth-enabled collections that have access to the admin panel.
+
+  For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/3.x/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
+
+- #### Media
+
+  This is the uploads enabled collection. It features pre-configured sizes, focal point and manual resizing to help you manage your pictures.
+
+### Docker
+
+Alternatively, you can use [Docker](https://www.docker.com) to spin up this template locally. To do so, follow these steps:
+
+1. Follow [steps 1 and 2 from above](#development), the docker-compose file will automatically use the `.env` file in your project root
+1. Next run `docker-compose up`
+1. Follow [steps 4 and 5 from above](#development) to login and create your first admin user
+
+That's it! The Docker instance will help you get up and running quickly while also standardizing the development environment across your teams.
+
+## Questions
+
+If you have any issues or questions, reach out to us on [Discord](https://discord.com/invite/payload) or start a [GitHub discussion](https://github.com/payloadcms/payload/discussions).
+</file>
+
+<file path="apps/cms/src/app/(frontend)/layout.tsx">
+import React from 'react'
+import './styles.css'
+
+export const metadata = {
+  description: 'A blank template using Payload in a Next.js app.',
+  title: 'Payload Blank Template',
+}
+
+export default async function RootLayout(props: { children: React.ReactNode }) {
+  const { children } = props
+
+  return (
+    <html lang="en">
+      <body>
+        <main>{children}</main>
+      </body>
+    </html>
+  )
+}
+</file>
+
+<file path="apps/cms/src/app/(frontend)/page.tsx">
+import { headers as getHeaders } from 'next/headers.js'
+import Image from 'next/image'
+import { getPayload } from 'payload'
+import React from 'react'
+import { fileURLToPath } from 'url'
+
+import config from '@/payload.config'
+import './styles.css'
+
+export default async function HomePage() {
+  const headers = await getHeaders()
+  const payloadConfig = await config
+  const payload = await getPayload({ config: payloadConfig })
+  const { user } = await payload.auth({ headers })
+
+  const fileURL = `vscode://file/${fileURLToPath(import.meta.url)}`
+
+  return (
+    <div className="home">
+      <div className="content">
+        <picture>
+          <source srcSet="https://raw.githubusercontent.com/payloadcms/payload/3.x/packages/ui/src/assets/payload-favicon.svg" />
+          <Image
+            alt="Payload Logo"
+            height={65}
+            src="https://raw.githubusercontent.com/payloadcms/payload/3.x/packages/ui/src/assets/payload-favicon.svg"
+            width={65}
+          />
+        </picture>
+        {!user && <h1>Welcome to your new project.</h1>}
+        {user && <h1>Welcome back, {user.email}</h1>}
+        <div className="links">
+          <a
+            className="admin"
+            href={payloadConfig.routes.admin}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Go to admin panel
+          </a>
+          <a
+            className="docs"
+            href="https://payloadcms.com/docs"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Documentation
+          </a>
+        </div>
+      </div>
+      <div className="footer">
+        <p>Update this page by editing</p>
+        <a className="codeLink" href={fileURL}>
+          <code>app/(frontend)/page.tsx</code>
+        </a>
+      </div>
+    </div>
+  )
+}
+</file>
+
+<file path="apps/cms/src/app/(frontend)/styles.css">
+:root {
+  --font-mono: 'Roboto Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 32px;
+
+  background: rgb(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 18px;
+  line-height: 32px;
+
+  margin: 0;
+  color: rgb(1000, 1000, 1000);
+
+  @media (max-width: 1024px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    margin: 24px 0;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+p {
+  margin: 24px 0;
+
+  @media (max-width: 1024px) {
+    margin: calc(var(--base) * 0.75) 0;
+  }
+}
+
+a {
+  color: currentColor;
+
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+    outline: none;
+  }
+}
+
+svg {
+  vertical-align: middle;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 45px;
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (max-width: 400px) {
+    padding: 24px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    a {
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .admin {
+      color: rgb(0, 0, 0);
+      background: rgb(1000, 1000, 1000);
+      border: 1px solid rgb(0, 0, 0);
+    }
+
+    .docs {
+      color: rgb(1000, 1000, 1000);
+      background: rgb(0, 0, 0);
+      border: 1px solid rgb(1000, 1000, 1000);
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .codeLink {
+      text-decoration: none;
+      padding: 0 0.5rem;
+      background: rgb(60, 60, 60);
+      border-radius: 4px;
+    }
+  }
+}
+</file>
+
+<file path="apps/cms/src/app/(payload)/admin/[[...segments]]/not-found.tsx">
+/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+/* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+import type { Metadata } from 'next'
+
+import config from '@payload-config'
+import { NotFoundPage, generatePageMetadata } from '@payloadcms/next/views'
+import { importMap } from '../importMap'
+
+type Args = {
+  params: Promise<{
+    segments: string[]
+  }>
+  searchParams: Promise<{
+    [key: string]: string | string[]
+  }>
+}
+
+export const generateMetadata = ({ params, searchParams }: Args): Promise<Metadata> =>
+  generatePageMetadata({ config, params, searchParams })
+
+const NotFound = ({ params, searchParams }: Args) =>
+  NotFoundPage({ config, params, searchParams, importMap })
+
+export default NotFound
+</file>
+
+<file path="apps/cms/src/app/(payload)/admin/[[...segments]]/page.tsx">
+/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+/* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+import type { Metadata } from 'next'
+
+import config from '@payload-config'
+import { RootPage, generatePageMetadata } from '@payloadcms/next/views'
+import { importMap } from '../importMap'
+
+type Args = {
+  params: Promise<{
+    segments: string[]
+  }>
+  searchParams: Promise<{
+    [key: string]: string | string[]
+  }>
+}
+
+export const generateMetadata = ({ params, searchParams }: Args): Promise<Metadata> =>
+  generatePageMetadata({ config, params, searchParams })
+
+const Page = ({ params, searchParams }: Args) =>
+  RootPage({ config, params, searchParams, importMap })
+
+export default Page
+</file>
+
+<file path="apps/cms/src/app/(payload)/admin/importMap.js">
+import { CollectionCards as CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1 } from '@payloadcms/next/rsc'
+
+/** @type import('payload').ImportMap */
+export const importMap = {
+  '@payloadcms/next/rsc#CollectionCards': CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1,
+}
+</file>
+
+<file path="apps/cms/src/app/(payload)/api/[...slug]/route.ts">
+/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+/* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+import config from '@payload-config'
+import '@payloadcms/next/css'
+import {
+  REST_DELETE,
+  REST_GET,
+  REST_OPTIONS,
+  REST_PATCH,
+  REST_POST,
+  REST_PUT,
+} from '@payloadcms/next/routes'
+
+export const GET = REST_GET(config)
+export const POST = REST_POST(config)
+export const DELETE = REST_DELETE(config)
+export const PATCH = REST_PATCH(config)
+export const PUT = REST_PUT(config)
+export const OPTIONS = REST_OPTIONS(config)
+</file>
+
+<file path="apps/cms/src/app/(payload)/api/graphql-playground/route.ts">
+/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+/* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+import config from '@payload-config'
+import '@payloadcms/next/css'
+import { GRAPHQL_PLAYGROUND_GET } from '@payloadcms/next/routes'
+
+export const GET = GRAPHQL_PLAYGROUND_GET(config)
+</file>
+
+<file path="apps/cms/src/app/(payload)/api/graphql/route.ts">
+/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+/* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+import config from '@payload-config'
+import { GRAPHQL_POST, REST_OPTIONS } from '@payloadcms/next/routes'
+
+export const POST = GRAPHQL_POST(config)
+
+export const OPTIONS = REST_OPTIONS(config)
+</file>
+
+<file path="apps/cms/src/app/(payload)/custom.scss">
+
+</file>
+
+<file path="apps/cms/src/app/(payload)/layout.tsx">
+/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+/* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+import config from '@payload-config'
+import '@payloadcms/next/css'
+import type { ServerFunctionClient } from 'payload'
+import { handleServerFunctions, RootLayout } from '@payloadcms/next/layouts'
+import React from 'react'
+
+import { importMap } from './admin/importMap.js'
+import './custom.scss'
+
+type Args = {
+  children: React.ReactNode
+}
+
+const serverFunction: ServerFunctionClient = async function (args) {
+  'use server'
+  return handleServerFunctions({
+    ...args,
+    config,
+    importMap,
+  })
+}
+
+const Layout = ({ children }: Args) => (
+  <RootLayout config={config} importMap={importMap} serverFunction={serverFunction}>
+    {children}
+  </RootLayout>
+)
+
+export default Layout
+</file>
+
+<file path="apps/cms/src/app/my-route/route.ts">
+import configPromise from '@payload-config'
+import { getPayload } from 'payload'
+
+export const GET = async (request: Request) => {
+  const payload = await getPayload({
+    config: configPromise,
+  })
+
+  return Response.json({
+    message: 'This is an example of a custom route.',
+  })
+}
+</file>
+
+<file path="apps/cms/src/collections/Media.ts">
+import type { CollectionConfig } from 'payload'
+
+export const Media: CollectionConfig = {
+  slug: 'media',
+  access: {
+    read: () => true,
+  },
+  fields: [
+    {
+      name: 'alt',
+      type: 'text',
+      required: true,
+    },
+  ],
+  upload: true,
+}
+</file>
+
+<file path="apps/cms/src/collections/Tenants.ts">
+import type { CollectionConfig } from 'payload'
+
+// Powers the multi-tenant split between iittnif-web and dronagiri-web —
+// every TopicPages entry is scoped to one of these.
+export const Tenants: CollectionConfig = {
+  slug: 'tenants',
+  admin: {
+    useAsTitle: 'name',
+  },
+  access: {
+    read: () => true,
+  },
+  fields: [
+    {
+      name: 'name',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'slug',
+      type: 'text',
+      required: true,
+      unique: true,
+      admin: {
+        description: 'e.g. "iittnif" or "dronagiri" — used in code, not shown to visitors.',
+      },
+    },
+  ],
+}
+</file>
+
+<file path="apps/cms/src/collections/TopicPages.ts">
+import type { CollectionConfig } from 'payload'
+
+// MOBILE-FIRST: see /MOBILE_FIRST.md — content fields here (title,
+// summary, body) should be written mobile-legible: short titles,
+// scannable summaries. This is a content-modeling concern, not just a CSS one.
+//
+// The single collection that powers EVERY [slug] dynamic route across
+// the site: Core Areas, Applied Areas, Technology Development, HR
+// pathways, Meta Data Resources. Add a new item here — it appears in
+// its route AND the mega-menu automatically. No code change needed.
+export const TopicPages: CollectionConfig = {
+  slug: 'topic-pages',
+  admin: {
+    useAsTitle: 'title',
+    defaultColumns: ['title', 'tenant', 'section', 'category', 'order'],
+  },
+  access: {
+    read: () => true,
+  },
+  fields: [
+    {
+      name: 'tenant',
+      type: 'select',
+      required: true,
+      options: [
+        { label: 'IITTNiF', value: 'iittnif' },
+        { label: 'Dronagiri', value: 'dronagiri' },
+      ],
+    },
+    {
+      name: 'section',
+      type: 'select',
+      required: true,
+      options: [
+        { label: 'Technology & Labs', value: 'technology-labs' },
+        { label: 'HRD', value: 'hrd' },
+        { label: 'Startups & Enablement', value: 'startups-enablement' },
+      ],
+    },
+    {
+      name: 'category',
+      type: 'text',
+      required: true,
+      admin: {
+        description:
+          'e.g. "core-areas", "applied-areas", "development", "resources", "pathways" — matches the route folder name.',
+      },
+    },
+    {
+      name: 'slug',
+      type: 'text',
+      required: true,
+      admin: {
+        description:
+          'URL segment, e.g. "quantum-technologies". Keep unique WITHIN a section+category — not globally enforced yet, so double-check before publishing.',
+      },
+    },
+    {
+      name: 'title',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'summary',
+      type: 'text',
+      admin: {
+        description: 'One-liner shown in menus and card previews — keep it short for mobile.',
+      },
+    },
+    {
+      name: 'body',
+      type: 'richText',
+    },
+    {
+      name: 'heroImage',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
+      name: 'trlStage',
+      type: 'select',
+      options: [
+        { label: 'Research', value: 'research' },
+        { label: 'Prototype', value: 'prototype' },
+        { label: 'Validation', value: 'validation' },
+        { label: 'Deployment', value: 'deployment' },
+      ],
+      admin: {
+        description: 'Drives the accent colour on the chromatic spine automatically.',
+      },
+    },
+    {
+      name: 'relatedLinks',
+      type: 'array',
+      fields: [
+        { name: 'label', type: 'text', required: true },
+        { name: 'href', type: 'text', required: true },
+      ],
+    },
+    {
+      name: 'order',
+      type: 'number',
+      defaultValue: 0,
+      admin: {
+        description: 'Controls position within its menu — lower numbers appear first.',
+      },
+    },
+  ],
+}
+</file>
+
+<file path="apps/cms/src/collections/Users.ts">
+import type { CollectionConfig } from 'payload'
+
+export const Users: CollectionConfig = {
+  slug: 'users',
+  admin: {
+    useAsTitle: 'email',
+  },
+  auth: true,
+  fields: [
+    // Email added by default
+    // Add more fields as needed
+  ],
+}
+</file>
+
+<file path="apps/cms/src/payload-types.ts">
+/* tslint:disable */
+/* eslint-disable */
+/**
+ * This file was automatically generated by Payload.
+ * DO NOT MODIFY IT BY HAND. Instead, modify your source Payload config,
+ * and re-run `payload generate:types` to regenerate this file.
+ */
+
+/**
+ * Supported timezones in IANA format.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "supportedTimezones".
+ */
+export type SupportedTimezones =
+  | 'Pacific/Midway'
+  | 'Pacific/Niue'
+  | 'Pacific/Honolulu'
+  | 'Pacific/Rarotonga'
+  | 'America/Anchorage'
+  | 'Pacific/Gambier'
+  | 'America/Los_Angeles'
+  | 'America/Tijuana'
+  | 'America/Denver'
+  | 'America/Phoenix'
+  | 'America/Chicago'
+  | 'America/Guatemala'
+  | 'America/New_York'
+  | 'America/Bogota'
+  | 'America/Caracas'
+  | 'America/Santiago'
+  | 'America/Buenos_Aires'
+  | 'America/Sao_Paulo'
+  | 'Atlantic/South_Georgia'
+  | 'Atlantic/Azores'
+  | 'Atlantic/Cape_Verde'
+  | 'Europe/London'
+  | 'Europe/Berlin'
+  | 'Africa/Lagos'
+  | 'Europe/Athens'
+  | 'Africa/Cairo'
+  | 'Europe/Moscow'
+  | 'Asia/Riyadh'
+  | 'Asia/Dubai'
+  | 'Asia/Baku'
+  | 'Asia/Karachi'
+  | 'Asia/Tashkent'
+  | 'Asia/Calcutta'
+  | 'Asia/Dhaka'
+  | 'Asia/Almaty'
+  | 'Asia/Jakarta'
+  | 'Asia/Bangkok'
+  | 'Asia/Shanghai'
+  | 'Asia/Singapore'
+  | 'Asia/Tokyo'
+  | 'Asia/Seoul'
+  | 'Australia/Brisbane'
+  | 'Australia/Sydney'
+  | 'Pacific/Guam'
+  | 'Pacific/Noumea'
+  | 'Pacific/Auckland'
+  | 'Pacific/Fiji';
+
+export interface Config {
+  auth: {
+    users: UserAuthOperations;
+  };
+  blocks: {};
+  collections: {
+    users: User;
+    media: Media;
+    tenants: Tenant;
+    'topic-pages': TopicPage;
+    'payload-kv': PayloadKv;
+    'payload-locked-documents': PayloadLockedDocument;
+    'payload-preferences': PayloadPreference;
+    'payload-migrations': PayloadMigration;
+  };
+  collectionsJoins: {};
+  collectionsSelect: {
+    users: UsersSelect<false> | UsersSelect<true>;
+    media: MediaSelect<false> | MediaSelect<true>;
+    tenants: TenantsSelect<false> | TenantsSelect<true>;
+    'topic-pages': TopicPagesSelect<false> | TopicPagesSelect<true>;
+    'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
+    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
+    'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
+    'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
+  };
+  db: {
+    defaultIDType: number;
+  };
+  fallbackLocale: null;
+  globals: {};
+  globalsSelect: {};
+  locale: null;
+  widgets: {
+    collections: CollectionsWidget;
+  };
+  user: User;
+  jobs: {
+    tasks: unknown;
+    workflows: unknown;
+  };
+}
+export interface UserAuthOperations {
+  forgotPassword: {
+    email: string;
+    password: string;
+  };
+  login: {
+    email: string;
+    password: string;
+  };
+  registerFirstUser: {
+    email: string;
+    password: string;
+  };
+  unlock: {
+    email: string;
+    password: string;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users".
+ */
+export interface User {
+  id: number;
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  sessions?:
+    | {
+        id: string;
+        createdAt?: string | null;
+        expiresAt: string;
+      }[]
+    | null;
+  password?: string | null;
+  collection: 'users';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media".
+ */
+export interface Media {
+  id: number;
+  alt: string;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tenants".
+ */
+export interface Tenant {
+  id: number;
+  name: string;
+  /**
+   * e.g. "iittnif" or "dronagiri" — used in code, not shown to visitors.
+   */
+  slug: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "topic-pages".
+ */
+export interface TopicPage {
+  id: number;
+  tenant: 'iittnif' | 'dronagiri';
+  section: 'technology-labs' | 'hrd' | 'startups-enablement';
+  /**
+   * e.g. "core-areas", "applied-areas", "development", "resources", "pathways" — matches the route folder name.
+   */
+  category: string;
+  /**
+   * URL segment, e.g. "quantum-technologies". Keep unique WITHIN a section+category — not globally enforced yet, so double-check before publishing.
+   */
+  slug: string;
+  title: string;
+  /**
+   * One-liner shown in menus and card previews — keep it short for mobile.
+   */
+  summary?: string | null;
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  heroImage?: (number | null) | Media;
+  /**
+   * Drives the accent colour on the chromatic spine automatically.
+   */
+  trlStage?: ('research' | 'prototype' | 'validation' | 'deployment') | null;
+  relatedLinks?:
+    | {
+        label: string;
+        href: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Controls position within its menu — lower numbers appear first.
+   */
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-kv".
+ */
+export interface PayloadKv {
+  id: number;
+  key: string;
+  data:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-locked-documents".
+ */
+export interface PayloadLockedDocument {
+  id: number;
+  document?:
+    | ({
+        relationTo: 'users';
+        value: number | User;
+      } | null)
+    | ({
+        relationTo: 'media';
+        value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'tenants';
+        value: number | Tenant;
+      } | null)
+    | ({
+        relationTo: 'topic-pages';
+        value: number | TopicPage;
+      } | null);
+  globalSlug?: string | null;
+  user: {
+    relationTo: 'users';
+    value: number | User;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-preferences".
+ */
+export interface PayloadPreference {
+  id: number;
+  user: {
+    relationTo: 'users';
+    value: number | User;
+  };
+  key?: string | null;
+  value?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-migrations".
+ */
+export interface PayloadMigration {
+  id: number;
+  name?: string | null;
+  batch?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users_select".
+ */
+export interface UsersSelect<T extends boolean = true> {
+  updatedAt?: T;
+  createdAt?: T;
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
+  sessions?:
+    | T
+    | {
+        id?: T;
+        createdAt?: T;
+        expiresAt?: T;
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media_select".
+ */
+export interface MediaSelect<T extends boolean = true> {
+  alt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tenants_select".
+ */
+export interface TenantsSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "topic-pages_select".
+ */
+export interface TopicPagesSelect<T extends boolean = true> {
+  tenant?: T;
+  section?: T;
+  category?: T;
+  slug?: T;
+  title?: T;
+  summary?: T;
+  body?: T;
+  heroImage?: T;
+  trlStage?: T;
+  relatedLinks?:
+    | T
+    | {
+        label?: T;
+        href?: T;
+        id?: T;
+      };
+  order?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-kv_select".
+ */
+export interface PayloadKvSelect<T extends boolean = true> {
+  key?: T;
+  data?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-locked-documents_select".
+ */
+export interface PayloadLockedDocumentsSelect<T extends boolean = true> {
+  document?: T;
+  globalSlug?: T;
+  user?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-preferences_select".
+ */
+export interface PayloadPreferencesSelect<T extends boolean = true> {
+  user?: T;
+  key?: T;
+  value?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-migrations_select".
+ */
+export interface PayloadMigrationsSelect<T extends boolean = true> {
+  name?: T;
+  batch?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "collections_widget".
+ */
+export interface CollectionsWidget {
+  data?: {
+    [k: string]: unknown;
+  };
+  width: 'full';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "auth".
+ */
+export interface Auth {
+  [k: string]: unknown;
+}
+
+
+declare module 'payload' {
+  export interface GeneratedTypes extends Config {}
+}
+</file>
+
+<file path="apps/cms/src/payload.config.ts">
+import { sqliteAdapter } from '@payloadcms/db-sqlite'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import path from 'path'
+import { buildConfig } from 'payload'
+import { fileURLToPath } from 'url'
+import sharp from 'sharp'
+
+import { Users } from './collections/Users'
+import { Media } from './collections/Media'
+import { Tenants } from './collections/Tenants'
+import { TopicPages } from './collections/TopicPages'
+
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
+
+export default buildConfig({
+  admin: {
+    user: Users.slug,
+    importMap: {
+      baseDir: path.resolve(dirname),
+    },
+  },
+  collections: [Users, Media, Tenants, TopicPages],
+  editor: lexicalEditor(),
+  secret: process.env.PAYLOAD_SECRET || '',
+  typescript: {
+    outputFile: path.resolve(dirname, 'payload-types.ts'),
+  },
+  db: sqliteAdapter({
+    client: {
+      url: process.env.DATABASE_URL || '',
+    },
+  }),
+  sharp,
+  plugins: [],
+})
+</file>
+
+<file path="apps/cms/test.env">
+NODE_OPTIONS="--no-deprecation --no-experimental-strip-types"
+</file>
+
+<file path="apps/cms/tests/e2e/admin.e2e.spec.ts">
+import { test, expect, Page } from '@playwright/test'
+import { login } from '../helpers/login'
+import { seedTestUser, cleanupTestUser, testUser } from '../helpers/seedUser'
+
+test.describe('Admin Panel', () => {
+  let page: Page
+
+  test.beforeAll(async ({ browser }, testInfo) => {
+    await seedTestUser()
+
+    const context = await browser.newContext()
+    page = await context.newPage()
+
+    await login({ page, user: testUser })
+  })
+
+  test.afterAll(async () => {
+    await cleanupTestUser()
+  })
+
+  test('can navigate to dashboard', async () => {
+    await page.goto('http://localhost:3000/admin')
+    await expect(page).toHaveURL('http://localhost:3000/admin')
+    const dashboardArtifact = page.locator('span[title="Dashboard"]').first()
+    await expect(dashboardArtifact).toBeVisible()
+  })
+
+  test('can navigate to list view', async () => {
+    await page.goto('http://localhost:3000/admin/collections/users')
+    await expect(page).toHaveURL('http://localhost:3000/admin/collections/users')
+    const listViewArtifact = page.locator('h1', { hasText: 'Users' }).first()
+    await expect(listViewArtifact).toBeVisible()
+  })
+
+  test('can navigate to edit view', async () => {
+    await page.goto('http://localhost:3000/admin/collections/users/create')
+    await expect(page).toHaveURL(/\/admin\/collections\/users\/[a-zA-Z0-9-_]+/)
+    const editViewArtifact = page.locator('input[name="email"]')
+    await expect(editViewArtifact).toBeVisible()
+  })
+})
+</file>
+
+<file path="apps/cms/tests/e2e/frontend.e2e.spec.ts">
+import { test, expect, Page } from '@playwright/test'
+
+test.describe('Frontend', () => {
+  let page: Page
+
+  test.beforeAll(async ({ browser }, testInfo) => {
+    const context = await browser.newContext()
+    page = await context.newPage()
+  })
+
+  test('can go on homepage', async ({ page }) => {
+    await page.goto('http://localhost:3000')
+
+    await expect(page).toHaveTitle(/Payload Blank Template/)
+
+    const heading = page.locator('h1').first()
+
+    await expect(heading).toHaveText('Welcome to your new project.')
+  })
+})
+</file>
+
+<file path="apps/cms/tests/helpers/login.ts">
+import type { Page } from '@playwright/test'
+import { expect } from '@playwright/test'
+
+export interface LoginOptions {
+  page: Page
+  serverURL?: string
+  user: {
+    email: string
+    password: string
+  }
+}
+
+/**
+ * Logs the user into the admin panel via the login page.
+ */
+export async function login({
+  page,
+  serverURL = 'http://localhost:3000',
+  user,
+}: LoginOptions): Promise<void> {
+  await page.goto(`${serverURL}/admin/login`)
+
+  await page.fill('#field-email', user.email)
+  await page.fill('#field-password', user.password)
+  await page.click('button[type="submit"]')
+
+  await page.waitForURL(`${serverURL}/admin`)
+
+  const dashboardArtifact = page.locator('span[title="Dashboard"]')
+  await expect(dashboardArtifact).toBeVisible()
+}
+</file>
+
+<file path="apps/cms/tests/helpers/seedUser.ts">
+import { getPayload } from 'payload'
+import config from '../../src/payload.config.js'
+
+export const testUser = {
+  email: 'dev@payloadcms.com',
+  password: 'test',
+}
+
+/**
+ * Seeds a test user for e2e admin tests.
+ */
+export async function seedTestUser(): Promise<void> {
+  const payload = await getPayload({ config })
+
+  // Delete existing test user if any
+  await payload.delete({
+    collection: 'users',
+    where: {
+      email: {
+        equals: testUser.email,
+      },
+    },
+  })
+
+  // Create fresh test user
+  await payload.create({
+    collection: 'users',
+    data: testUser,
+  })
+}
+
+/**
+ * Cleans up test user after tests
+ */
+export async function cleanupTestUser(): Promise<void> {
+  const payload = await getPayload({ config })
+
+  await payload.delete({
+    collection: 'users',
+    where: {
+      email: {
+        equals: testUser.email,
+      },
+    },
+  })
+}
+</file>
+
+<file path="apps/cms/tests/int/api.int.spec.ts">
+import { getPayload, Payload } from 'payload'
+import config from '@/payload.config'
+
+import { describe, it, beforeAll, expect } from 'vitest'
+
+let payload: Payload
+
+describe('API', () => {
+  beforeAll(async () => {
+    const payloadConfig = await config
+    payload = await getPayload({ config: payloadConfig })
+  })
+
+  it('fetches users', async () => {
+    const users = await payload.find({
+      collection: 'users',
+    })
+    expect(users).toBeDefined()
+  })
+})
+</file>
+
+<file path="apps/cms/tsconfig.json">
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@payload-config": [
+        "./src/payload.config.ts"
+      ]
+    },
+    "target": "ES2022"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+</file>
+
+<file path="apps/cms/vitest.config.mts">
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react'
+import tsconfigPaths from 'vite-tsconfig-paths'
+
+export default defineConfig({
+  plugins: [tsconfigPaths(), react()],
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./vitest.setup.ts'],
+    include: ['tests/int/**/*.int.spec.ts'],
+  },
+})
+</file>
+
+<file path="apps/cms/vitest.setup.ts">
+// Any setup scripts you might need go here
+
+// Load .env files
+import 'dotenv/config'
+</file>
+
+<file path="apps/dronagiri-web/README.md">
+# dronagiri-web
+
+Operation Dronagiri — standalone site, shares design-system DNA with
+iittnif-web but is NOT the same app, NOT the same deploy.
+
+## Routes
+
+| Route                | Purpose |
+|-----------------------|---------|
+| `/`                    | Hero + vision, real (non-zero) live counters via cms-client |
+| `/vision-mission`      | Mandate + National Geospatial Policy 2022 framing |
+| `/focus-areas`         | 3 focus area deep-dives |
+| `/pilots`               | Interactive India map — replaces the current static photo pair |
+| `/startup-challenge`   | Application flow, feeds same Payload backend as iittnif-web's startup portfolio |
+| `/partners`            | Real logo grid (no duplicate-DOM marquee hack) |
+| `/news` + `/news/[slug]` | Dronagiri-specific newsroom |
+| `/contact`             | Dronagiri-specific contact routing |
+
+## API routes
+
+- `/api/pilot-metrics` — live pilot-state counters (fixes the "0 Pilot States" problem)
+- `/api/startup-applications` — application intake, shared schema with iittnif-web
+</file>
+
+<file path="apps/iittnif-web/global.d.ts">
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
+
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/app/building-your-application/configuring/typescript for more information.
+declare module '*.css';
+</file>
+
+<file path="apps/iittnif-web/next-env.d.ts">
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
+
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/app/building-your-application/configuring/typescript for more information.
+</file>
+
+<file path="apps/iittnif-web/next.config.js">
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  transpilePackages: [
+    '@iittnif/ui',
+    '@iittnif/design-system',
+    '@iittnif/cms-client',
+    '@iittnif/i18n',
+  ],
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'cms.iittnif.com' },
+      { protocol: 'https', hostname: '*.vercel-storage.com' },
+    ],
+  },
+  experimental: {
+    optimizePackageImports: ['@iittnif/ui'],
+  },
+}
+
+module.exports = nextConfig
+</file>
+
+<file path="apps/iittnif-web/package.json">
+{
+  "name": "iittnif-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "framer-motion": "^11.2.0",
+    "@iittnif/ui": "workspace:*",
+    "@iittnif/design-system": "workspace:*",
+    "@iittnif/cms-client": "workspace:*",
+    "@iittnif/i18n": "workspace:*"
+  },
+  "devDependencies": {
+    "@iittnif/config": "workspace:*",
+    "typescript": "^5.5.0",
+    "@types/react": "^18.3.0",
+    "@types/node": "^20.14.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0"
+  }
+}
+</file>
+
+<file path="apps/iittnif-web/postcss.config.js">
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+</file>
+
+<file path="apps/iittnif-web/README.md">
+# iittnif-web
+
+The IITTNiF parent site. 8 tabs, each an isolated route — per PDR Section 04.
+
+## Routes → PDR mapping
+
+| Route                          | PDR Tab                  | Notes |
+|---------------------------------|---------------------------|-------|
+| `/`                              | Home                      | Triage-first hero, 20-second identity, pathway cards |
+| `/about-tih`                     | About TIH                 | Identity, mandate, governance, leadership |
+| `/technology-labs`               | Technology & Labs         | Hub page — 3 labs, TRL-aware pipeline, filterable TDP portfolio |
+| `/technology-labs/core-areas/[slug]`     | Core Areas (8 items)      | ONE dynamic template, CMS-driven — Quantum Tech, Geospatial Tools, Data Science, RF, Image Processing, Indoor Mapping, Robotics, Defence |
+| `/technology-labs/applied-areas/[slug]`  | Applied Areas (7 items)   | ONE dynamic template — Precision Agri, Disaster Mgmt, Smart Cities, Smart Villages, Land Records & Insurance, Navigation, Policy & Legal |
+| `/technology-labs/development/[slug]`    | Technology Development (9 items) | ONE dynamic template — Overview, Translational R&D, GNSS, GIS, LiDAR, Quantum Navigation, Computer Vision, AI/ML, Geo-Intel Lab |
+| `/technology-labs/resources/[slug]`      | Meta Data Resources (2 items) | ONE dynamic template — NavIC (IRNSS) Community, Nav-i-GIST |
+| `/technology-labs/collaborations`        | Collaborations            | Bespoke — single item, own design |
+| `/flagship-initiatives`          | Flagship Initiatives      | VIKAS, SPIN Labs, VidyaGIS, Bharath PNT, Dronagiri card (links out to standalone site) |
+| `/startups-enablement`           | Startups & Business Enablement | Founder-facing hero, VIKAS Advantage, filterable startup cards |
+| `/startups-enablement/innovations`       | Innovations                | Bespoke — only 2 sub-items total, each gets its own design |
+| `/startups-enablement/grand-challenges`  | Grand Challenges           | Bespoke |
+| `/hrd`                           | Human Resource Development| Hub — 6 learner pathway cards |
+| `/hrd/[slug]`                     | HR pathways (8 items)     | ONE dynamic template — Fellowships/Internships, UG, PG, PhD, Postdoc, Skill Development, Nav-i-FOSSEE, Nav-i-GEE |
+| `/newsroom` + `/newsroom/[slug]` | Newsroom                  | CMS-driven, kept out of main nav clutter |
+| `/contact`                       | Contact                   | Stakeholder-routed enquiry pathways |
+
+## API routes
+
+- `/api/impact-feed` — public counters/outcomes feed (PDR: "open Impact feed" beyond-brief addition)
+- `/api/application-status` — login-free, magic-link VIKAS application status check (PDR: "eighth need")
+
+Each route folder is self-contained. Editing `/hrd` cannot break `/contact`.
+</file>
+
+<file path="apps/iittnif-web/src/app/(marketing)/layout.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — this component/page is designed
+// and coded for 360px first. Unprefixed Tailwind classes = mobile
+// layout; sm:/md:/lg:/xl: add desktop enhancements, they never carry
+// the primary layout logic.
+
+import { MegaMenu } from '@iittnif/ui'
+import { getNavTree } from '@iittnif/cms-client'
+
+export default async function MarketingLayout({ children }: { children: React.ReactNode }) {
+  const navTree = await getNavTree('iittnif')
+
+  return (
+    <>
+      <MegaMenu navTree={navTree} tenant="iittnif" siteName="IITTNiF" />
+      <main className="mx-auto max-w-wide px-4">{children}</main>
+    </>
+  )
+}
+</file>
+
+<file path="apps/iittnif-web/src/app/(marketing)/page.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — this component/page is designed
+// and coded for 360px first. Unprefixed Tailwind classes = mobile
+// layout; sm:/md:/lg:/xl: add desktop enhancements, they never carry
+// the primary layout logic.
+
+import { Hero, Pillars, Pipeline } from '@iittnif/ui'
+
+export default function HomePage() {
+  return (
+    <>
+      <Hero
+        eyebrow="National Technology Innovation Hub · NM-ICPS · DST · Government of India"
+        title="Building India's Future in Positioning & Precision Technologies"
+        subtitle="Anchored at IIT Tirupati — a country-scale mission from research to deployed national impact."
+        stage="research"
+        primaryCta={{ label: 'Explore VIKAS', href: '/startups-enablement' }}
+        secondaryCta={{ label: 'About TIH', href: '/about-tih' }}
+      />
+
+      {/* Placeholder copy below — real lab names/descriptions come from
+          IIT once confirmed; structure and component wiring is final. */}
+      <Pillars
+        heading="Three Laboratories, One Mission"
+        items={[
+          {
+            title: 'Geo-Intel Lab',
+            description:
+              'GNSS, GIS, LiDAR, and quantum navigation research feeding directly into national positioning infrastructure.',
+            href: '/technology-labs',
+            stage: 'mandate',
+          },
+          {
+            title: 'AI/ML & Computer Vision Lab',
+            description:
+              'Applied AI for earth observation, image processing, and precision-technology deployment at scale.',
+            href: '/technology-labs',
+            stage: 'architecture',
+          },
+          {
+            title: 'Translational R&D Lab',
+            description:
+              'Taking research from prototype to validated, field-ready technology through structured TDPs.',
+            href: '/technology-labs',
+            stage: 'delivery',
+          },
+        ]}
+      />
+      <Pipeline heading="From Research to National Impact" />
+    </>
+  )
+}
+</file>
+
+<file path="apps/iittnif-web/src/app/(marketing)/technology-labs/core-areas/[slug]/page.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — this component/page is designed
+// and coded for 360px first. Unprefixed Tailwind classes = mobile
+// layout; sm:/md:/lg:/xl: add desktop enhancements, they never carry
+// the primary layout logic.
+
+import { TopicPage } from '@iittnif/ui'
+import { getTopicBySlug, getTopicsByCategory } from '@iittnif/cms-client'
+import { notFound } from 'next/navigation'
+
+const SECTION = 'technology-labs'
+const CATEGORY = 'core-areas'
+
+// Pre-renders every Core Area at build time; ISR revalidates every 5 min
+// so a new CMS entry appears without a redeploy.
+export async function generateStaticParams() {
+  const items = await getTopicsByCategory('iittnif', SECTION, CATEGORY)
+  return items.map((item) => ({ slug: item.slug }))
+}
+
+export default async function CoreAreaPage({ params }: { params: { slug: string } }) {
+  const data = await getTopicBySlug('iittnif', SECTION, CATEGORY, params.slug)
+  if (!data) notFound()
+
+  return (
+    <TopicPage
+      title={data.title}
+      summary={data.summary}
+      body={data.body}
+      trlStage={data.trlStage}
+      relatedLinks={data.relatedLinks}
+      breadcrumb={{ label: 'Technology & Labs', href: '/technology-labs' }}
+    />
+  )
+}
+</file>
+
+<file path="apps/iittnif-web/src/app/globals.css">
+/* MOBILE-FIRST: see /MOBILE_FIRST.md — base rules below apply at 360px;
+   any @media queries added later must be min-width, never max-width. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-neutral-bg text-neutral-text font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+
+  code, .data-label {
+    @apply font-mono;
+  }
+}
+</file>
+
+<file path="apps/iittnif-web/src/app/layout.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — this component/page is designed
+// and coded for 360px first. Unprefixed Tailwind classes = mobile
+// layout; sm:/md:/lg:/xl: add desktop enhancements, they never carry
+// the primary layout logic.
+
+import type { Metadata } from 'next'
+import { Space_Grotesk, Public_Sans, IBM_Plex_Mono } from 'next/font/google'
+import './globals.css'
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+})
+const publicSans = Public_Sans({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+const plexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-mono',
+  display: 'swap',
+})
+
+export const metadata: Metadata = {
+  title: 'IITTNiF — IIT Tirupati Navavishkar I-Hub Foundation',
+  description:
+    "National Technology Innovation Hub under NM-ICPS, DST, Government of India — anchored at IIT Tirupati. Building India's future in Positioning & Precision Technologies.",
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${publicSans.variable} ${plexMono.variable}`}
+    >
+      <body>{children}</body>
+    </html>
+  )
+}
+</file>
+
+<file path="apps/iittnif-web/tailwind.config.js">
+const preset = require('../../packages/config/tailwind-preset')
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  presets: [preset],
+  content: [
+    './src/**/*.{ts,tsx}',
+    '../../packages/ui/src/**/*.{ts,tsx}',
+  ],
+  theme: { extend: {} },
+  plugins: [],
+}
+</file>
+
+<file path="apps/iittnif-web/tsconfig.json">
+{
+  "extends": "../../packages/config/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+</file>
+
+<file path="GETTING_STARTED.md">
+# Getting Started — Local Setup
+
+This scaffold is built for `G:\IIT Tirupati\iittnif-ecosystem`. After
+extracting the zip into that exact folder, run everything from a
+terminal (PowerShell or Git Bash) opened inside it.
+
+## Prerequisites
+
+- Node.js 20+ — https://nodejs.org
+- pnpm — install once globally: `npm install -g pnpm`
+
+## First run
+
+```powershell
+cd "G:\IIT Tirupati\iittnif-ecosystem"
+pnpm install
+```
+
+This installs dependencies for every app and package in one pass —
+that's the point of the pnpm workspace.
+
+## Run just the IITTNiF site
+
+```powershell
+pnpm dev:iittnif
+```
+
+Opens at http://localhost:3000. Right now this will render the Home
+page hero correctly, but any `[slug]` route (like Core Areas) will
+come back empty until the CMS (`apps/cms`) is running locally too,
+since those pages fetch live content from Payload.
+
+## Run the CMS
+
+Payload itself (`apps/cms`) isn't wired with real dependencies yet —
+that's genuinely the next build step, not something to fake with
+placeholder data. Once it's in, `pnpm dev:cms` brings up the admin
+panel at http://localhost:3001/admin.
+
+## What's real vs. what's next
+
+**Real, working code right now:**
+- Root workspace (pnpm + Turborepo)
+- `packages/design-system` — the chromatic spine as typed tokens
+- `packages/config` — tsconfig, Tailwind preset, ESLint preset
+- `packages/ui` — `Hero` and `TopicPage` components, fully functional
+- `packages/cms-client` — typed query functions (will work once CMS exists)
+- `apps/iittnif-web` — Next.js app boots, Home page renders, one live
+  example route (`/technology-labs/core-areas/[slug]`) proving the
+  whole CMS-driven pattern end to end
+
+**Next in sequence:**
+- `apps/cms` — actual Payload installation + the `TopicPages` collection
+  (content model already drafted in `apps/cms/src/collections/TopicPages.ts`)
+- Remaining `packages/ui` components: `Pillars`, `Pipeline`, `Portfolio`,
+  `Stories`, `EngageCTA`, `MegaMenu`, `Glossary`, `LanguageToggle`,
+  `ImpactCounter`, `Map`
+- `apps/dronagiri-web` — same treatment as iittnif-web, once the
+  shared `ui` library is further along
+</file>
+
+<file path="infra/docker/README.md">
+# docker
+
+Dockerfiles for all three apps (iittnif-web, dronagiri-web, cms) plus a
+docker-compose.yml for local/staging parity. Built from day one so the
+eventual move from Vercel to IIT Tirupati's own servers is a redeploy,
+not a rebuild.
+</file>
+
+<file path="infra/vercel/README.md">
+# vercel
+
+Current-phase staging config. Every push to main auto-deploys a shareable
+HTTPS preview link for the Friday 5PM stakeholder review — no localhost,
+no npm run dev required from reviewers. Removed once IIT infra is approved.
+</file>
+
+<file path="MOBILE_FIRST.md">
+# Mobile-First — The Standard, Not a Suggestion
+
+Every screen, every component, every layout in this project is designed
+and coded **mobile-first**. This file is the canonical reference —
+every code file in the repo carries a short comment pointing back here,
+so opening any single file on a fresh machine tells you this rule
+immediately, without hunting for a wiki page.
+
+## What "mobile-first" means in this codebase, concretely
+
+1. **Base (unprefixed) Tailwind classes = the 360px mobile layout.**
+   `sm:`, `md:`, `lg:`, `xl:`, `2xl:` are *additions* for larger screens,
+   never overrides of a desktop-first base. If you write
+   `flex-col md:flex-row`, the column layout is mobile; the row layout
+   is the enhancement. Never the other way around.
+
+2. **Design and build in this order, every time:**
+   360px → 640px → 768px → 1024px → 1440px → 1920px
+   (matches `packages/design-system/tokens/spacing.ts` → `breakpoints`).
+   Get the 360px version right and *shippable* before touching a
+   larger breakpoint.
+
+3. **Touch targets, not hover states, are the default interaction.**
+   Every CTA, nav item, and card must work as a tap target (min ~44px)
+   before we layer in hover/focus enhancements for desktop pointers.
+
+4. **Images, fonts, and data payloads are sized for the smallest
+   viewport and slowest plausible connection first** — this also
+   directly serves the PDR's Lighthouse Performance ≥ 90 mobile budget
+   (Section 07). Mobile-first isn't just layout — it's the performance
+   contract too.
+
+5. **Hero, Pillars, Pipeline, Portfolio, Stories, Engage/CTA** — every
+   one of the six PDR component-system modules must have its mobile
+   layout designed *first*, before the desktop composition is decided.
+
+## The header comment convention
+
+Every `.ts` / `.tsx` file in `apps/` and `packages/` starts with:
+
+```ts
+// MOBILE-FIRST: see /MOBILE_FIRST.md — base styles target 360px;
+// sm:/md:/lg: are progressive enhancements, not overrides.
+```
+
+If you open a file and this comment is missing, add it — don't assume
+an older file is exempt.
+</file>
+
+<file path="package.json">
+{
+  "name": "iittnif-ecosystem",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:iittnif": "turbo run dev --filter=iittnif-web",
+    "dev:dronagiri": "turbo run dev --filter=dronagiri-web",
+    "dev:cms": "turbo run dev --filter=cms",
+    "build": "turbo run build",
+    "build:iittnif": "turbo run build --filter=iittnif-web",
+    "build:dronagiri": "turbo run build --filter=dronagiri-web",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.5.0"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
+</file>
+
+<file path="packages/cms-client/package.json">
+{
+  "name": "@iittnif/cms-client",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
+</file>
+
+<file path="packages/cms-client/README.md">
+# cms-client
+
+Typed fetch layer both apps use to query Payload. Keeps GraphQL/REST
+query logic out of component code, and is the single place that
+enforces "which tenant am I asking for."
+</file>
+
+<file path="packages/cms-client/src/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — data returned here should stay
+// lean (avoid over-fetching heavy fields like heroImage at full res)
+// since mobile networks are the primary target, not an afterthought.
+
+export * from './queries/topicPages'
+</file>
+
+<file path="packages/cms-client/src/queries/topicPages.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — data returned here should stay
+// lean (avoid over-fetching heavy fields like heroImage at full res)
+// since mobile networks are the primary target, not an afterthought.
+
+// Typed fetch layer over the Payload REST/GraphQL API.
+// CMS_API_URL will point at Vercel-hosted Payload during staging,
+// then the IIT-hosted Docker instance post-approval — this file is
+// the ONLY place that URL is read from, so migration is a one-line change.
+
+const CMS_API_URL = process.env.NEXT_PUBLIC_CMS_API_URL ?? 'http://localhost:3001'
+
+export type Tenant = 'iittnif' | 'dronagiri'
+
+export interface TopicPageData {
+  title: string
+  summary?: string
+  body?: string
+  heroImage?: string
+  trlStage?: 'research' | 'prototype' | 'validation' | 'deployment'
+  relatedLinks?: { label: string; href: string }[]
+  slug: string
+  section: string
+  category: string
+  order: number
+}
+
+/** Fetch a single topic item by tenant + section + category + slug. */
+export async function getTopicBySlug(
+  tenant: Tenant,
+  section: string,
+  category: string,
+  slug: string
+): Promise<TopicPageData | null> {
+  const params = new URLSearchParams({
+    'where[tenant][equals]': tenant,
+    'where[section][equals]': section,
+    'where[category][equals]': category,
+    'where[slug][equals]': slug,
+    limit: '1',
+  })
+  const res = await fetch(`${CMS_API_URL}/api/topic-pages?${params}`, {
+    next: { revalidate: 300 }, // ISR — 5 min, tune per PDR performance budget
+  })
+  if (!res.ok) return null
+  const data = await res.json()
+  return data.docs?.[0] ?? null
+}
+
+/** Fetch every item in a category — powers both static-param generation and the mega-menu. */
+export async function getTopicsByCategory(
+  tenant: Tenant,
+  section: string,
+  category: string
+): Promise<TopicPageData[]> {
+  const params = new URLSearchParams({
+    'where[tenant][equals]': tenant,
+    'where[section][equals]': section,
+    'where[category][equals]': category,
+    sort: 'order',
+    limit: '100',
+  })
+  const res = await fetch(`${CMS_API_URL}/api/topic-pages?${params}`, {
+    next: { revalidate: 300 },
+  })
+  if (!res.ok) return []
+  const data = await res.json()
+  return data.docs ?? []
+}
+
+/** Full nav tree for the MegaMenu — grouped by section, then category. */
+export type NavTree = Record<string, Record<string, TopicPageData[]>>
+
+export async function getNavTree(tenant: Tenant): Promise<NavTree> {
+  const params = new URLSearchParams({
+    'where[tenant][equals]': tenant,
+    sort: 'section,category,order',
+    limit: '200',
+  })
+  const res = await fetch(`${CMS_API_URL}/api/topic-pages?${params}`, {
+    next: { revalidate: 300 },
+  })
+  if (!res.ok) return {}
+  const data = await res.json()
+  const docs: TopicPageData[] = data.docs ?? []
+
+  return docs.reduce<NavTree>((tree, item) => {
+    const sectionGroup = tree[item.section] ?? (tree[item.section] = {})
+    const categoryGroup = sectionGroup[item.category] ?? (sectionGroup[item.category] = [])
+    categoryGroup.push(item)
+    return tree
+  }, {})
+}
+</file>
+
+<file path="packages/config/eslint-preset/index.js">
+module.exports = {
+  extends: ['next/core-web-vitals', 'eslint:recommended', 'prettier'],
+  rules: {
+    'no-unused-vars': 'warn',
+    '@next/next/no-html-link-for-pages': 'off',
+  },
+}
+</file>
+
+<file path="packages/config/package.json">
+{
+  "name": "@iittnif/config",
+  "version": "0.1.0",
+  "private": true,
+  "files": ["tsconfig", "tailwind-preset", "eslint-preset"]
+}
+</file>
+
+<file path="packages/config/tailwind-preset/index.js">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — this preset uses Tailwind's default
+// min-width breakpoints (mobile-first). Never add max-width overrides
+// here without discussing it first — it would flip the whole convention.
+
+// Shared Tailwind preset — consumed by both apps' tailwind.config.ts
+// via `presets: [require('@iittnif/config/tailwind-preset')]`
+//
+// This is what makes the chromatic spine enforceable in code: nobody
+// picks a hex value in a component, they use `bg-spine-mandate` etc.
+
+const { spine, neutral } = require('../../design-system/tokens/colors')
+const { fontFamily, fontSize } = require('../../design-system/tokens/typography')
+const { breakpoints, radius, maxWidth } = require('../../design-system/tokens/spacing')
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        spine: {
+          research: spine.research.hex,
+          mandate: spine.mandate.hex,
+          architecture: spine.architecture.hex,
+          delivery: spine.delivery.hex,
+          impact: spine.nationalImpact.hex,
+        },
+        neutral: {
+          bg: neutral.bg,
+          surface: neutral.surface,
+          border: neutral.border,
+          text: neutral.textPrimary,
+          'text-secondary': neutral.textSecondary,
+          'dark-panel': neutral.darkPanelBg,
+          'dark-panel-text': neutral.darkPanelText,
+        },
+      },
+      fontFamily: {
+        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
+        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'Courier New', 'monospace'],
+      },
+      fontSize: {
+        hero: fontSize.hero,
+        h1: fontSize.h1,
+        h2: fontSize.h2,
+        h3: fontSize.h3,
+      },
+      screens: breakpoints,
+      borderRadius: radius,
+      maxWidth: {
+        content: maxWidth.content,
+        wide: maxWidth.wide,
+      },
+    },
+  },
+}
+</file>
+
+<file path="packages/config/tsconfig/base.json">
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noUncheckedIndexedAccess": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "exclude": ["node_modules"]
+}
+</file>
+
+<file path="packages/config/tsconfig/nextjs.json">
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "allowJs": true,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@iittnif/ui/*": ["../../packages/ui/src/*"],
+      "@iittnif/design-system": ["../../packages/design-system/tokens"],
+      "@iittnif/cms-client": ["../../packages/cms-client/src"],
+      "@iittnif/i18n": ["../../packages/i18n"]
+    }
+  }
+}
+</file>
+
+<file path="packages/design-system/package.json">
+{
+  "name": "@iittnif/design-system",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./tokens/index.ts",
+  "types": "./tokens/index.ts",
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
+</file>
+
+<file path="packages/design-system/README.md">
+# design-system
+
+The chromatic spine (PDR Section 03) as code, not a mood board.
+
+- `tokens/colors.ts` — Research (Deep Indigo #10182B) → Mandate (Signal Blue #1C5C8C)
+  → Architecture (Geospatial Teal #0E8C82) → Delivery (Beacon Amber #D98A2B)
+  → National Impact (Earth Terracotta #C1502E). Every page's accent color
+  is derived from its position on this gradient — not picked ad hoc.
+- `tokens/typography.ts` — Space Grotesk (display), Public Sans (body), IBM Plex Mono (data)
+- `tokens/spacing.ts` — shared spacing/breakpoint scale, 360px → 1920px per PDR perf budget
+
+Dronagiri consumes these same tokens but applies its own accent mapping —
+same DNA, distinct skin, per the Stripe/Stripe Press model.
+</file>
+
+<file path="packages/design-system/tokens/colors.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — fontSize.hero/h1/h2/h3 use
+// clamp() so type scales correctly from 360px up without a
+// separate mobile override.
+
+/**
+ * The Chromatic Spine — PDR Section 03
+ *
+ * Not a picked palette. This IS the Research -> Technology Development ->
+ * Prototype -> Validation -> Deployment -> National Impact pipeline,
+ * encoded as a color-temperature gradient. Cool/abstract at the
+ * conceptual end, warm/tangible at the deployed end.
+ *
+ * Every page and component derives its accent from its true position
+ * on this spine — never picked ad hoc per page.
+ */
+
+export const spine = {
+  research: {
+    name: 'Deep Indigo',
+    hex: '#10182B',
+    role: 'Institutional trust — the night sky a satellite is tracked against.',
+  },
+  mandate: {
+    name: 'Signal Blue',
+    hex: '#1C5C8C',
+    role: 'The cool, instrument-panel blue of positioning and navigation systems.',
+  },
+  architecture: {
+    name: 'Geospatial Teal',
+    hex: '#0E8C82',
+    role: 'The data-and-validation colour of GIS and earth-observation tooling.',
+  },
+  delivery: {
+    name: 'Beacon Amber',
+    hex: '#D98A2B',
+    role: 'The warm, precision-instrument amber of active deployment.',
+  },
+  nationalImpact: {
+    name: 'Earth Terracotta',
+    hex: '#C1502E',
+    role: 'Tangible, ground-level — the colour of deployed outcomes.',
+  },
+} as const
+
+export type SpineStage = keyof typeof spine
+
+/**
+ * TRL-stage -> spine-stage mapping.
+ * Used by TopicPage and ImpactCounter to auto-derive an accent color
+ * from a CMS entry's `trlStage` field, so editors never pick colors by hand.
+ */
+export const trlToSpine: Record<string, SpineStage> = {
+  research: 'research',
+  prototype: 'mandate',
+  validation: 'architecture',
+  deployment: 'delivery',
+}
+
+/**
+ * Neutral scale — supports both light-default and the narrow,
+ * case-by-case dark exception (PDR Section 10: "Light by Default,
+ * Dark by Exception"). Dark tokens exist here but are NEVER applied
+ * to a full page shell — only to a scoped data-viz/satellite-imagery
+ * panel, per the four-part exception clause.
+ */
+export const neutral = {
+  bg: '#FAF7F0',        // warm off-white, matches PDR report background
+  surface: '#FFFFFF',
+  border: '#E4E0D6',
+  textPrimary: '#10182B',   // reuses Research indigo for text — one less color to invent
+  textSecondary: '#5A5F6E',
+  darkPanelBg: '#0B0F1A',   // ONLY for the scoped dark exception, never page shell
+  darkPanelText: '#F4F6F8',
+} as const
+
+/**
+ * Semantic accent map — Dronagiri inherits this same spine logic but
+ * gets its own accent identity so the two sites feel related, not
+ * identical. Derived the same way, not copy-pasted.
+ */
+export const dronagiriSpine = {
+  research: { name: 'Dronagiri Indigo', hex: '#141B33' },
+  mandate: { name: 'Dronagiri Sky', hex: '#2568A0' },
+  architecture: { name: 'Dronagiri Teal', hex: '#12988A' },
+  delivery: { name: 'Dronagiri Amber', hex: '#E0932F' },
+  nationalImpact: { name: 'Dronagiri Terracotta', hex: '#C85530' },
+} as const
+</file>
+
+<file path="packages/design-system/tokens/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — fontSize.hero/h1/h2/h3 use
+// clamp() so type scales correctly from 360px up without a
+// separate mobile override.
+
+export * from './colors'
+export * from './typography'
+export * from './spacing'
+</file>
+
+<file path="packages/design-system/tokens/spacing.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — breakpoints below are consumed
+// min-width-up (Tailwind default), i.e. mobile-first. Do not flip this
+// to max-width without updating every consumer in packages/ui.
+
+/**
+ * Spacing scale — 4px base unit, consistent across both apps.
+ */
+export const space = {
+  0: '0',
+  1: '0.25rem',   // 4px
+  2: '0.5rem',    // 8px
+  3: '0.75rem',   // 12px
+  4: '1rem',      // 16px
+  6: '1.5rem',    // 24px
+  8: '2rem',      // 32px
+  12: '3rem',     // 48px
+  16: '4rem',     // 64px
+  24: '6rem',     // 96px
+  32: '8rem',     // 128px
+} as const
+
+/**
+ * Breakpoints — PDR Section 07: "Responsive targets 360px -> 1920px,
+ * tested at 5 breakpoints."
+ */
+export const breakpoints = {
+  xs: '360px',
+  sm: '640px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1440px',
+  '2xl': '1920px',
+} as const
+
+export const radius = {
+  sm: '0.25rem',
+  md: '0.5rem',
+  lg: '1rem',
+  full: '9999px',
+} as const
+
+export const maxWidth = {
+  content: '1280px',
+  wide: '1440px',
+} as const
+</file>
+
+<file path="packages/design-system/tokens/typography.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — fontSize.hero/h1/h2/h3 use
+// clamp() so type scales correctly from 360px up without a
+// separate mobile override.
+
+/**
+ * Type System — PDR Section 03
+ * Three open-license faces, each earning its role. Not a mood-board pick:
+ * Space Grotesk reads as instrument-grade precision hardware, not a
+ * startup deck. Public Sans is the U.S. federal government's own
+ * public-domain typeface — fitting pedigree for a DST-anchored mission.
+ * IBM Plex Mono gives every number on the site engineering-instrument
+ * character.
+ */
+
+export const fontFamily = {
+  display: "'Space Grotesk', system-ui, sans-serif",   // headings, hero statements
+  body: "'Public Sans', system-ui, sans-serif",          // body copy, UI text
+  mono: "'IBM Plex Mono', 'Courier New', monospace",     // data, counters, labels, captions
+} as const
+
+export const fontWeight = {
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+} as const
+
+/**
+ * Type scale — fluid, clamps between mobile (360px) and desktop (1920px)
+ * per PDR Section 07 responsive/performance budget.
+ */
+export const fontSize = {
+  hero: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)',
+  h1: 'clamp(2rem, 3vw + 1rem, 3.5rem)',
+  h2: 'clamp(1.5rem, 2vw + 1rem, 2.5rem)',
+  h3: 'clamp(1.25rem, 1.2vw + 1rem, 1.75rem)',
+  bodyLg: '1.125rem',
+  body: '1rem',
+  small: '0.875rem',
+  caption: '0.75rem',   // used with mono for data labels
+} as const
+
+export const lineHeight = {
+  tight: 1.1,
+  heading: 1.25,
+  body: 1.6,
+} as const
+</file>
+
+<file path="packages/i18n/en/common.json">
+{
+  "nav.home": "Home",
+  "nav.aboutTih": "About TIH",
+  "nav.technologyLabs": "Technology & Labs",
+  "nav.flagshipInitiatives": "Flagship Initiatives",
+  "nav.startupsEnablement": "Startups & Business Enablement",
+  "nav.hrd": "Human Resource Development",
+  "nav.newsroom": "Newsroom",
+  "nav.contact": "Contact"
+}
+</file>
+
+<file path="packages/i18n/hi/common.json">
+{
+  "nav.home": "मुख पृष्ठ",
+  "nav.aboutTih": "टीआईएच के बारे में",
+  "nav.technologyLabs": "प्रौद्योगिकी और प्रयोगशालाएँ",
+  "nav.flagshipInitiatives": "प्रमुख पहल",
+  "nav.startupsEnablement": "स्टार्टअप और व्यवसाय सक्षमता",
+  "nav.hrd": "मानव संसाधन विकास",
+  "nav.newsroom": "समाचार कक्ष",
+  "nav.contact": "संपर्क करें"
+}
+</file>
+
+<file path="packages/i18n/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — keep dictionary strings short;
+// nav labels in particular must fit a mobile mega-menu without wrapping.
+
+import en from './en/common.json'
+import hi from './hi/common.json'
+
+export const dictionaries = { en, hi } as const
+export type Locale = keyof typeof dictionaries
+</file>
+
+<file path="packages/i18n/package.json">
+{
+  "name": "@iittnif/i18n",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts"
+}
+</file>
+
+<file path="packages/i18n/README.md">
+# i18n
+
+EN/HI dictionaries. Bilingual by default per PDR Executive Summary
+beyond-brief commitment — "a national mission's front door shouldn't
+have a language gate." Shared by both apps.
+</file>
+
+<file path="packages/ui/package.json">
+{
+  "name": "@iittnif/ui",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@iittnif/cms-client": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.3.0",
+    "framer-motion": "^11.2.0"
+  },
+  "devDependencies": {
+    "@iittnif/config": "workspace:*",
+    "typescript": "^5.5.0",
+    "@types/react": "^18.3.0"
+  }
+}
+</file>
+
+<file path="packages/ui/README.md">
+# ui
+
+The six reusable modules from PDR Section 08, plus components added for
+the beyond-brief commitments. One component, re-themed per page via the
+design-system tokens — not eight one-off builds.
+
+- `Hero/` — full-bleed statement + 2 CTAs
+- `Pillars/` — 3–6 card grid, hover reveal
+- `Pipeline/` — animated horizontal flow (Research → Impact, re-scoped per page)
+- `Portfolio/` — filterable card grid
+- `Stories/` — photo + narrative + outcome
+- `EngageCTA/` — stakeholder card router (routes into VIKAS)
+- `Glossary/` — hover-tooltip inline glossary (PDR beyond-brief: GNSS, GeoAI, etc.)
+- `LanguageToggle/` — EN/HI toggle, default-on bilingual layer
+- `ImpactCounter/` — live counter component, consumes cms-client — fixes Dronagiri's zero-stat problem
+- `Map/` — interactive India map (Mapbox/Leaflet per PDR Section 07), used in Dronagiri /pilots and iittnif-web SPIN Labs section
+</file>
+
+<file path="packages/ui/src/Hero/Hero.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — this component/page is designed
+// and coded for 360px first. Unprefixed Tailwind classes = mobile
+// layout; sm:/md:/lg:/xl: add desktop enhancements, they never carry
+// the primary layout logic.
+'use client'
+
+import type { SpineStage } from '@iittnif/design-system'
+import { motion, useReducedMotion, type Variants } from 'framer-motion'
+
+const spineBg: Record<SpineStage, string> = {
+  research: 'bg-spine-research',
+  mandate: 'bg-spine-mandate',
+  architecture: 'bg-spine-architecture',
+  delivery: 'bg-spine-delivery',
+  nationalImpact: 'bg-spine-impact',
+}
+
+export interface HeroProps {
+  eyebrow?: string
+  title: string
+  subtitle?: string
+  primaryCta?: { label: string; href: string }
+  secondaryCta?: { label: string; href: string }
+  stage?: SpineStage
+  children?: React.ReactNode
+}
+
+export function Hero({
+  eyebrow,
+  title,
+  subtitle,
+  primaryCta,
+  secondaryCta,
+  stage = 'research',
+  children,
+}: HeroProps) {
+  const shouldReduceMotion = useReducedMotion()
+
+  const container: Variants = {
+    hidden: {},
+    show: {
+      transition: { staggerChildren: shouldReduceMotion ? 0 : 0.08 },
+    },
+  }
+  const item: Variants = {
+    hidden: shouldReduceMotion ? {} : { opacity: 0, y: 16 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: 'easeOut' },
+    },
+  }
+
+  return (
+    <motion.section
+      className="relative overflow-hidden py-16 md:py-24"
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
+      <div className={`absolute left-0 top-0 h-1 w-24 ${spineBg[stage]}`} aria-hidden />
+      {eyebrow && (
+        <motion.p
+          variants={item}
+          className="mb-3 font-mono text-small uppercase tracking-wide text-neutral-text-secondary"
+        >
+          {eyebrow}
+        </motion.p>
+      )}
+      <motion.h1
+        variants={item}
+        className="max-w-4xl text-hero font-semibold leading-tight text-neutral-text"
+      >
+        {title}
+      </motion.h1>
+      {subtitle && (
+        <motion.p variants={item} className="mt-6 max-w-2xl text-bodyLg text-neutral-text-secondary">
+          {subtitle}
+        </motion.p>
+      )}
+      <motion.div variants={item} className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+        {primaryCta && (
+          <a
+            href={primaryCta.href}
+            className={`w-full rounded-md px-6 py-3 text-center font-medium text-white transition-transform hover:scale-[1.02] sm:w-auto ${spineBg[stage]}`}
+          >
+            {primaryCta.label}
+          </a>
+        )}
+        {secondaryCta && (
+          <a
+            href={secondaryCta.href}
+            className="w-full rounded-md border border-neutral-border px-6 py-3 text-center font-medium text-neutral-text transition-transform hover:scale-[1.02] sm:w-auto"
+          >
+            {secondaryCta.label}
+          </a>
+        )}
+      </motion.div>
+      {children && (
+        <motion.div variants={item} className="mt-12">
+          {children}
+        </motion.div>
+      )}
+    </motion.section>
+  )
+}
+</file>
+
+<file path="packages/ui/src/Hero/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md
+
+export * from './Hero'
+</file>
+
+<file path="packages/ui/src/index.ts">
+export * from './Hero'
+export * from './Pillars'
+export * from './Pipeline'
+export * from './TopicPage'
+export * from './MegaMenu'
+// Portfolio, Stories, EngageCTA, Glossary,
+// LanguageToggle, ImpactCounter, Map — built next in sequence
+</file>
+
+<file path="packages/ui/src/MegaMenu/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md
+
+export * from './MegaMenu'
+</file>
+
+<file path="packages/ui/src/MegaMenu/MegaMenu.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — base experience is a full-width
+// slide-down drawer with an accordion, opened by a tap-friendly hamburger
+// button. The horizontal bar + hover/click dropdown panel only exists
+// at md: and up. Nothing in the mobile drawer is hidden behind hover —
+// every link is reachable by tap, expanded via accordion disclosure.
+'use client'
+
+import { useEffect, useRef, useState } from 'react'
+import type { NavTree, TopicPageData, Tenant } from '@iittnif/cms-client'
+
+interface BespokeLink {
+  label: string
+  href: string
+}
+
+interface DynamicGroup {
+  heading: string
+  section: string
+  category: string
+}
+
+interface NavItem {
+  label: string
+  href: string
+  bespokeChildren?: BespokeLink[]
+  dynamicGroups?: DynamicGroup[]
+}
+
+const NAV_CONFIG: NavItem[] = [
+  { label: 'Home', href: '/' },
+  {
+    label: 'About TIH',
+    href: '/about-tih',
+    bespokeChildren: [
+      { label: 'About Us', href: '/about-tih/about-us' },
+      { label: 'Vision & Mission', href: '/about-tih/vision-mission' },
+    ],
+  },
+  {
+    label: 'Technology & Labs',
+    href: '/technology-labs',
+    dynamicGroups: [
+      { heading: 'Core Areas', section: 'technology-labs', category: 'core-areas' },
+      { heading: 'Applied Areas', section: 'technology-labs', category: 'applied-areas' },
+      { heading: 'Technology Development', section: 'technology-labs', category: 'development' },
+      { heading: 'Meta Data Resources', section: 'technology-labs', category: 'resources' },
+    ],
+    bespokeChildren: [{ label: 'Collaborations', href: '/technology-labs/collaborations' }],
+  },
+  { label: 'Flagship Initiatives', href: '/flagship-initiatives' },
+  {
+    label: 'Startups & Enablement',
+    href: '/startups-enablement',
+    bespokeChildren: [
+      { label: 'Innovations', href: '/startups-enablement/innovations' },
+      { label: 'Grand Challenges', href: '/startups-enablement/grand-challenges' },
+    ],
+  },
+  {
+    label: 'HRD',
+    href: '/hrd',
+    dynamicGroups: [{ heading: 'Pathways', section: 'hrd', category: 'pathways' }],
+  },
+  { label: 'Newsroom', href: '/newsroom' },
+  { label: 'Contact', href: '/contact' },
+]
+
+function topicHref(item: TopicPageData) {
+  return `/${item.section}/${item.category}/${item.slug}`
+}
+
+export interface MegaMenuProps {
+  navTree: NavTree
+  tenant: Tenant
+  siteName?: string
+}
+
+export function MegaMenu({ navTree, siteName = 'IITTNiF' }: MegaMenuProps) {
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const navRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const onClickOutside = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setOpenIndex(null)
+      }
+    }
+    document.addEventListener('mousedown', onClickOutside)
+    return () => document.removeEventListener('mousedown', onClickOutside)
+  }, [])
+
+  const hasDropdown = (item: NavItem) => {
+    return Boolean(item.dynamicGroups?.length || item.bespokeChildren?.length)
+  }
+
+  return (
+    <nav ref={navRef} className="relative border-b border-neutral-border bg-neutral-surface">
+      <div className="mx-auto flex max-w-wide items-center justify-between px-4 py-4">
+        <a href="/" className="font-display text-h3 font-semibold text-neutral-text">
+          {siteName}
+        </a>
+
+        <button
+          type="button"
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((v) => !v)}
+          className="flex h-11 w-11 items-center justify-center rounded-md md:hidden"
+        >
+          <span className="sr-only">Menu</span>
+          {mobileOpen ? (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          ) : (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          )}
+        </button>
+
+        <ul className="hidden md:flex md:items-center md:gap-1">
+          {NAV_CONFIG.map((item, i) => (
+            <li key={item.label} className="relative">
+              <button
+                type="button"
+                onClick={() => hasDropdown(item) && setOpenIndex(openIndex === i ? null : i)}
+                className="flex items-center gap-1 rounded-md px-3 py-2 text-small font-medium text-neutral-text hover:bg-neutral-bg"
+              >
+                {hasDropdown(item) ? item.label : <a href={item.href}>{item.label}</a>}
+                {hasDropdown(item) && (
+                  <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden>
+                    <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                  </svg>
+                )}
+              </button>
+
+              {hasDropdown(item) && openIndex === i && (
+                <div className="absolute left-0 top-full z-20 mt-1 flex min-w-[32rem] gap-8 rounded-lg border border-neutral-border bg-neutral-surface p-6 shadow-lg">
+                  {item.dynamicGroups?.map((group) => {
+                    const groupItems = navTree[group.section]?.[group.category] ?? []
+                    return (
+                      <div key={group.heading}>
+                        <p className="mb-2 font-mono text-caption uppercase text-neutral-text-secondary">
+                          {group.heading}
+                        </p>
+                        <ul className="space-y-1">
+                          {groupItems.map((topic) => (
+                            <li key={topic.slug}>
+                              <a
+                                href={topicHref(topic)}
+                                className="block text-small text-neutral-text hover:underline"
+                              >
+                                {topic.title}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )
+                  })}
+                  {item.bespokeChildren && item.bespokeChildren.length > 0 && (
+                    <div>
+                      {item.dynamicGroups && (
+                        <p className="mb-2 font-mono text-caption uppercase text-neutral-text-secondary">
+                          More
+                        </p>
+                      )}
+                      <ul className="space-y-1">
+                        {item.bespokeChildren.map((child) => (
+                          <li key={child.href}>
+                            <a
+                              href={child.href}
+                              className="block text-small text-neutral-text hover:underline"
+                            >
+                              {child.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {mobileOpen && (
+        <div className="max-h-[70vh] overflow-y-auto border-t border-neutral-border px-4 py-4 md:hidden">
+          <ul className="space-y-1">
+            {NAV_CONFIG.map((item, i) => (
+              <li key={item.label}>
+                {hasDropdown(item) ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                      aria-expanded={openIndex === i}
+                      className="flex w-full items-center justify-between rounded-md py-3 text-left text-body font-medium text-neutral-text"
+                    >
+                      {item.label}
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 12 12"
+                        aria-hidden
+                        className={openIndex === i ? 'rotate-180' : ''}
+                      >
+                        <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                      </svg>
+                    </button>
+                    {openIndex === i && (
+                      <div className="ml-3 space-y-4 border-l border-neutral-border pl-4 pb-3">
+                        {item.dynamicGroups?.map((group) => {
+                          const groupItems = navTree[group.section]?.[group.category] ?? []
+                          return (
+                            <div key={group.heading}>
+                              <p className="mb-1 font-mono text-caption uppercase text-neutral-text-secondary">
+                                {group.heading}
+                              </p>
+                              <ul className="space-y-1">
+                                {groupItems.map((topic) => (
+                                  <li key={topic.slug}>
+                                    <a
+                                      href={topicHref(topic)}
+                                      className="block py-1 text-small text-neutral-text"
+                                    >
+                                      {topic.title}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )
+                        })}
+                        {item.bespokeChildren?.map((child) => (
+                          <a
+                            key={child.href}
+                            href={child.href}
+                            className="block py-1 text-small text-neutral-text"
+                          >
+                            {child.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <a href={item.href} className="block py-3 text-body font-medium text-neutral-text">
+                    {item.label}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </nav>
+  )
+}
+</file>
+
+<file path="packages/ui/src/MegaMenu/README.md">
+# MegaMenu
+
+Renders the dropdown navigation (the "About / Core Areas / Applied Areas"
+and "Technology Development / Startups / HR" panels from the old site)
+by querying the `topic-pages` CMS collection grouped by `section` +
+`category` + `order` — NOT from a hardcoded array in this component.
+
+This is the actual mechanism behind "add a subsection, don't touch code":
+a new TopicPages entry with `category: core-areas` appears in this menu
+automatically on next data fetch. Bespoke pages (About Us, Vision &
+Mission, Collaborations, Innovations, Grand Challenges) are the only
+items still manually listed here, because there are few of them and
+they don't belong to a repeating category.
+</file>
+
+<file path="packages/ui/src/Pillars/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md
+
+export * from './Pillars'
+</file>
+
+<file path="packages/ui/src/Pillars/Pillars.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — all cards are single-column and
+// fully visible (no hidden-behind-hover content) at 360px. The grid
+// only becomes multi-column at sm:/lg:, and "hover reveal" is added as
+// a pointer-device bonus via CSS, never a mobile requirement — there is
+// no hover on a touchscreen, so touch users must never be gated behind it.
+'use client'
+
+import type { SpineStage } from '@iittnif/design-system'
+import { motion, useReducedMotion, type Variants } from 'framer-motion'
+
+const spineBorder: Record<SpineStage, string> = {
+  research: 'hover:border-spine-research',
+  mandate: 'hover:border-spine-mandate',
+  architecture: 'hover:border-spine-architecture',
+  delivery: 'hover:border-spine-delivery',
+  nationalImpact: 'hover:border-spine-impact',
+}
+
+export interface PillarItem {
+  title: string
+  description: string
+  href?: string
+  stage?: SpineStage
+}
+
+export interface PillarsProps {
+  items: PillarItem[]
+  heading?: string
+}
+
+export function Pillars({ items, heading }: PillarsProps) {
+  const shouldReduceMotion = useReducedMotion()
+
+  const container: Variants = {
+    hidden: {},
+    show: { transition: { staggerChildren: shouldReduceMotion ? 0 : 0.1 } },
+  }
+  const card: Variants = {
+    hidden: shouldReduceMotion ? {} : { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } },
+  }
+
+  return (
+    <section className="py-12 sm:py-16">
+      {heading && (
+        <h2 className="mb-8 text-h2 font-semibold text-neutral-text">{heading}</h2>
+      )}
+      <motion.div
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {items.map((item) => {
+          const CardTag = item.href ? motion.a : motion.div
+          return (
+            <CardTag
+              key={item.title}
+              variants={card}
+              {...(item.href ? { href: item.href } : {})}
+              className={`group block rounded-lg border border-neutral-border bg-neutral-surface p-6 transition-colors ${
+                spineBorder[item.stage ?? 'research']
+              }`}
+            >
+              <h3 className="text-h3 font-semibold text-neutral-text">{item.title}</h3>
+              <p className="mt-3 text-body text-neutral-text-secondary">
+                {item.description}
+              </p>
+              {item.href && (
+                <span className="mt-4 inline-block text-small font-medium text-neutral-text underline decoration-neutral-border underline-offset-4 group-hover:decoration-current">
+                  Learn more →
+                </span>
+              )}
+            </CardTag>
+          )
+        })}
+      </motion.div>
+    </section>
+  )
+}
+</file>
+
+<file path="packages/ui/src/Pipeline/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md
+
+export * from './Pipeline'
+</file>
+
+<file path="packages/ui/src/Pipeline/Pipeline.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — renders as a VERTICAL timeline
+// at 360px (a horizontal 6-node diagram is illegible or scroll-locked
+// on a narrow screen). The horizontal flow layout only activates at
+// md: and up — it is an enhancement, not the base experience.
+'use client'
+
+import type { SpineStage } from '@iittnif/design-system'
+import { spine } from '@iittnif/design-system'
+import { motion, useReducedMotion, type Variants } from 'framer-motion'
+
+export interface PipelineStage {
+  label: string
+  stage: SpineStage
+  description?: string
+}
+
+export interface PipelineProps {
+  stages?: PipelineStage[]
+  heading?: string
+}
+
+const DEFAULT_STAGES: PipelineStage[] = [
+  { label: 'Research', stage: 'research' },
+  { label: 'Technology Development', stage: 'mandate' },
+  { label: 'Prototype', stage: 'architecture' },
+  { label: 'Validation', stage: 'architecture' },
+  { label: 'Deployment', stage: 'delivery' },
+  { label: 'National Impact', stage: 'nationalImpact' },
+]
+
+const dotBg: Record<SpineStage, string> = {
+  research: 'bg-spine-research',
+  mandate: 'bg-spine-mandate',
+  architecture: 'bg-spine-architecture',
+  delivery: 'bg-spine-delivery',
+  nationalImpact: 'bg-spine-impact',
+}
+
+const hexFor: Record<SpineStage, string> = {
+  research: spine.research.hex,
+  mandate: spine.mandate.hex,
+  architecture: spine.architecture.hex,
+  delivery: spine.delivery.hex,
+  nationalImpact: spine.nationalImpact.hex,
+}
+
+function buildGradient(stages: PipelineStage[], direction: 'to right' | 'to bottom') {
+  const n = stages.length - 1
+  const stops = stages
+    .map((s, i) => `${hexFor[s.stage]} ${n === 0 ? 0 : (i / n) * 100}%`)
+    .join(', ')
+  return `linear-gradient(${direction}, ${stops})`
+}
+
+export function Pipeline({ stages = DEFAULT_STAGES, heading }: PipelineProps) {
+  const shouldReduceMotion = useReducedMotion()
+
+  const container: Variants = {
+    hidden: {},
+    show: { transition: { staggerChildren: shouldReduceMotion ? 0 : 0.12 } },
+  }
+  const node: Variants = {
+    hidden: shouldReduceMotion ? {} : { opacity: 0, x: -12 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.35, ease: 'easeOut' } },
+  }
+  const line: Variants = {
+    hidden: { scaleX: shouldReduceMotion ? 1 : 0 },
+    show: { scaleX: 1, transition: { duration: 0.8, ease: 'easeInOut' } },
+  }
+  const lineVertical: Variants = {
+    hidden: { scaleY: shouldReduceMotion ? 1 : 0 },
+    show: { scaleY: 1, transition: { duration: 0.8, ease: 'easeInOut' } },
+  }
+
+  return (
+    <section className="py-12 sm:py-16">
+      {heading && (
+        <h2 className="mb-8 text-h2 font-semibold text-neutral-text">{heading}</h2>
+      )}
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="relative flex flex-col gap-8 md:hidden">
+          <motion.div
+            variants={lineVertical}
+            style={{ transformOrigin: 'top', backgroundImage: buildGradient(stages, 'to bottom') }}
+            className="absolute left-[7px] top-2 h-[calc(100%-1rem)] w-0.5"
+            aria-hidden
+          />
+          {stages.map((s) => (
+            <motion.div key={s.label} variants={node} className="relative flex gap-4 pl-0">
+              <span
+                className={`z-10 mt-1 h-4 w-4 flex-shrink-0 rounded-full ring-4 ring-neutral-bg ${dotBg[s.stage]}`}
+                aria-hidden
+              />
+              <div>
+                <p className="font-mono text-small font-medium text-neutral-text">{s.label}</p>
+                {s.description && (
+                  <p className="mt-1 text-small text-neutral-text-secondary">{s.description}</p>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="relative hidden md:flex md:items-start md:justify-between">
+          <motion.div
+            variants={line}
+            style={{ transformOrigin: 'left', backgroundImage: buildGradient(stages, 'to right') }}
+            className="absolute left-0 top-2 h-0.5 w-full"
+            aria-hidden
+          />
+          {stages.map((s) => (
+            <motion.div
+              key={s.label}
+              variants={node}
+              className="relative z-10 flex max-w-[10rem] flex-col items-center text-center"
+            >
+              <span
+                className={`h-4 w-4 flex-shrink-0 rounded-full ring-4 ring-neutral-bg ${dotBg[s.stage]}`}
+                aria-hidden
+              />
+              <p className="mt-3 font-mono text-small font-medium text-neutral-text">
+                {s.label}
+              </p>
+              {s.description && (
+                <p className="mt-1 text-small text-neutral-text-secondary">{s.description}</p>
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  )
+}
+</file>
+
+<file path="packages/ui/src/TopicPage/index.ts">
+// MOBILE-FIRST: see /MOBILE_FIRST.md
+
+export * from './TopicPage'
+</file>
+
+<file path="packages/ui/src/TopicPage/README.md">
+# TopicPage
+
+ONE component. Rendered by every `[slug]/page.tsx` across the site —
+Core Areas, Applied Areas, Technology Development, HR pathways, Meta
+Data Resources. Roughly 26 menu items today, 1 template.
+
+## How a route uses it
+
+```
+// apps/iittnif-web/src/app/(marketing)/technology-labs/core-areas/[slug]/page.tsx
+
+import { TopicPage } from '@iittnif/ui/TopicPage'
+import { getTopicBySlug } from '@iittnif/cms-client'
+
+export default async function Page({ params }: { params: { slug: string } }) {
+  const data = await getTopicBySlug('technology-labs', 'core-areas', params.slug)
+  return <TopicPage {...data} />
+}
+
+// generateStaticParams() pulls every entry in this category from
+// Payload at build time — new CMS entries get picked up on next build/ISR
+// revalidation, no code change required.
+```
+
+## Anatomy
+
+Hero (title + summary + optional heroImage) → Body (rich text) →
+TRL-stage accent color (pulled from design-system chromatic spine) →
+Related Links → back-to-category breadcrumb.
+
+## Why one template instead of 26 files
+
+Because every item in those old-site mega-menus has the identical shape
+under the hood — a title, an explainer, maybe related links. Writing 26
+near-duplicate page files is the "generic template" trap the PDR warned
+against, just distributed across the filesystem instead of visible on
+one page. One well-designed template, fed by structured content,
+scales to item #27 without a deploy.
+</file>
+
+<file path="packages/ui/src/TopicPage/TopicPage.tsx">
+// MOBILE-FIRST: see /MOBILE_FIRST.md — this component/page is designed
+// and coded for 360px first. Unprefixed Tailwind classes = mobile
+// layout; sm:/md:/lg:/xl: add desktop enhancements, they never carry
+// the primary layout logic.
+
+import type { SpineStage } from '@iittnif/design-system'
+import { trlToSpine } from '@iittnif/design-system'
+import { Hero } from '../Hero'
+
+export interface TopicPageProps {
+  title: string
+  summary?: string
+  body?: string // rendered rich text HTML from Payload; swap for RichText renderer later
+  heroImage?: string
+  trlStage?: keyof typeof trlToSpine
+  relatedLinks?: { label: string; href: string }[]
+  breadcrumb?: { label: string; href: string }
+}
+
+/**
+ * TopicPage — renders EVERY item from Core Areas, Applied Areas,
+ * Technology Development, HR pathways, and Meta Data Resources.
+ * One template, driven entirely by CMS data. See
+ * packages/ui/src/TopicPage/README.md for the full rationale.
+ */
+export function TopicPage({
+  title,
+  summary,
+  body,
+  trlStage,
+  relatedLinks,
+  breadcrumb,
+}: TopicPageProps) {
+  const stage: SpineStage = trlStage ? trlToSpine[trlStage] : 'research'
+
+  return (
+    <article>
+      {breadcrumb && (
+        <a href={breadcrumb.href} className="text-small text-neutral-text-secondary underline">
+          ← {breadcrumb.label}
+        </a>
+      )}
+      <Hero title={title} subtitle={summary} stage={stage} />
+      {body && (
+        <div
+          className="prose max-w-3xl text-body text-neutral-text"
+          dangerouslySetInnerHTML={{ __html: body }}
+        />
+      )}
+      {relatedLinks && relatedLinks.length > 0 && (
+        <nav className="mt-12 border-t border-neutral-border pt-6">
+          <p className="mb-3 font-mono text-caption uppercase text-neutral-text-secondary">
+            Related
+          </p>
+          <ul className="space-y-2">
+            {relatedLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="text-body underline">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </article>
+  )
+}
+</file>
+
+<file path="pnpm-workspace.yaml">
+packages:
+  - "apps/*"
+  - "packages/*"
+</file>
+
+<file path="README.md">
+# IITTNiF Ecosystem — Monorepo
+
+Two standalone, independently-deployed websites sharing one design system
+and one CMS. Built per the NS OJAS Media Labs Project Design Report (July 2026).
+
+## Structure
+
+- `apps/iittnif-web` — the IITTNiF parent site (8 tabs, single-page-per-section)
+- `apps/dronagiri-web` — Operation Dronagiri, standalone flagship-initiative site
+- `apps/cms` — Payload CMS, multi-tenant, serves content to both apps above
+- `packages/design-system` — the chromatic spine, type scale, spacing tokens
+- `packages/ui` — the six reusable PDR modules (Hero, Pillars, Pipeline, Portfolio, Stories, Engage/CTA) + extras
+- `packages/cms-client` — typed query layer both apps use to fetch from Payload
+- `packages/i18n` — EN/HI dictionaries (bilingual-by-default requirement)
+- `packages/config` — shared eslint/tsconfig/tailwind presets
+- `infra/docker` — containers for eventual migration to IIT's own servers
+- `infra/vercel` — staging deploy config (current, pre-approval phase)
+- `docs/weekly-updates` — Friday changelog archive for stakeholder review
+
+## Why this structure
+
+Each of the 8 IITTNiF tabs and 7 Dronagiri tabs lives as its own isolated
+route file. No shared page templates that could create merge conflicts —
+each section can be redesigned or rebuilt without touching a neighbor.
+Shared visual language and content logic live one level up, in `packages/`,
+so both sites stay visually related without being welded together.
+
+## Hosting
+
+- **Now**: Vercel preview deployments (both apps) — shareable HTTPS links,
+  no local setup required for stakeholder review.
+- **Post-approval**: Docker containers migrate as-is to IIT Tirupati's own
+  infrastructure. No rebuild — same containers, new host.
+</file>
+
+<file path="turbo.json">
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "dev": { "cache": false, "persistent": true },
+    "lint": {},
+    "type-check": {}
+  }
+}
+</file>
+
+</files>

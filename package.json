@@ -1,0 +1,26 @@
+{
+  "name": "iittnif-ecosystem",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:iittnif": "turbo run dev --filter=iittnif-web",
+    "dev:dronagiri": "turbo run dev --filter=dronagiri-web",
+    "dev:cms": "turbo run dev --filter=cms",
+    "build": "turbo run build",
+    "build:iittnif": "turbo run build --filter=iittnif-web",
+    "build:dronagiri": "turbo run build --filter=dronagiri-web",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "turbo": "^2.10.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.5.0"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

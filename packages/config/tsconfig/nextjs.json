@@ -1,0 +1,17 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "allowJs": true,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@iittnif/ui/*": ["../../packages/ui/src/*"],
+      "@iittnif/design-system": ["../../packages/design-system/tokens"],
+      "@iittnif/cms-client": ["../../packages/cms-client/src"],
+      "@iittnif/i18n": ["../../packages/i18n"]
+    }
+  }
+}

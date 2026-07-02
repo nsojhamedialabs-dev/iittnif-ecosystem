@@ -1,0 +1,21 @@
+{
+  // Silences VS Code's built-in CSS validator for @tailwind / @apply —
+  // these are Tailwind-specific at-rules, not invalid CSS. The real
+  // compiler (Next.js dev server) already understands them correctly;
+  // this setting only stops the EDITOR from false-flagging them.
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+
+  // Makes Tailwind IntelliSense (autocomplete for classes like
+  // bg-spine-mandate) work inside template literals and clsx-style
+  // strings, not just className="".
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
