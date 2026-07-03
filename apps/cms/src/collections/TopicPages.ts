@@ -1,3 +1,4 @@
+import type { CollectionConfig } from 'payload'
 // MOBILE-FIRST: see /MOBILE_FIRST.md — content fields here (title,
 // summary, body) should be written mobile-legible: short titles,
 // scannable summaries. This is a content-modeling concern, not just a CSS one.
@@ -15,7 +16,7 @@
 // Draft field shape — to be finalized in Week 1 with Payload's actual
 // field builder syntax. This is the CONTENT MODEL, not final code.
 
-export const TopicPages = {
+export const TopicPages: CollectionConfig = {
 
   slug: 'topic-pages',
   access: {
