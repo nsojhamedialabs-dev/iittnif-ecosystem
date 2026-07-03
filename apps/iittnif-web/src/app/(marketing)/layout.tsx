@@ -8,11 +8,19 @@
 // the resulting data is handed to the client MegaMenu — the CMS query
 // happens once per request/revalidation window, not per-render.
 
+// Imports brought back!
 import { MegaMenu, SiteFooter } from '@iittnif/ui'
 import { getNavTree } from '@iittnif/cms-client'
 
 export default async function MarketingLayout({ children }: { children: React.ReactNode }) {
-  const navTree = await getNavTree('iittnif')
+  // We use : any = {} to force TypeScript to accept our safe fallback
+  let navTree: any = {}; 
+
+  try {
+    navTree = await getNavTree('iittnif');
+  } catch (error) {
+    console.warn("CMS offline, building layout without nav data.");
+  }
 
   return (
     <>
